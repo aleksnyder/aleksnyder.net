@@ -1,0 +1,10 @@
+image: atlassian/default-image:latest
+
+pipelines:
+  default:
+  - step:
+      name: Deploy to server
+      deployment: production
+      script:
+        - cat ./deploy.sh | ssh -t asnyder@142.93.250.143
+        - echo "Deploy step finished"

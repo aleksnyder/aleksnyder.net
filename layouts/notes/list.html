@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<section class="section">
+	<h1 class="section-title grid-col-12">{{ .Title }}</h1>
+	<section class="recent-posts">
+		{{ $paginator := .Paginate (where .Pages "Type" "notes") }}
+		{{ range $paginator.Pages }}
+			<article class="grid posts">
+				<div class="row post">
+					<div class="cell">
+						<time>{{ .PublishDate.Format "January 2, 2006" }}</time>
+					</div>
+					<div class="cell">
+						<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+					</div>
+					<div class="cell tags">
+						{{ partial "components/tags.html" . }}
+					</div>
+				</div>
+			</article>
+		{{ end }}
+	</section>
+</section>
+
+{{ end }}

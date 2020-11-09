@@ -1,0 +1,38 @@
+.card-group {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 1.25em;
+  @include bp(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  &__wrapper {
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $yellow;
+      text-decoration: none;
+
+      .card__img {
+        filter: grayscale(20%);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.2em;
+    margin: 1rem 0 0;
+  }
+
+  &__img {
+    @include bp(tablet) {
+      filter: grayscale(100%);
+      transition: filter 0.2s ease-in-out;
+    }
+  }
+}

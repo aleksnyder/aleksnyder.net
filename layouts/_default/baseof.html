@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+	<head>
+		{{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+
+		<title>{{ block "title" . }}
+			{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
+		{{ end }}</title>
+
+		{{ range .AlternativeOutputFormats }}
+			<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+		{{ end }}
+
+		<!-- Styles -->
+		{{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+	</head>
+	<body>
+
+		<!-- Header -->
+		{{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+
+		<!-- JSON-LD -->
+		{{ block "json_ld" . }}{{ end }}
+
+		<!-- Main -->
+		<main id="content" class="site-content inner" role="main">
+		{{ block "main" . }}{{ end }}
+		</main>
+
+		<!-- Below Content -->
+		{{ block "below_content" . }}{{ end }}
+
+		<!-- Footer -->
+		{{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+
+		<!-- Scripts -->
+		{{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+	</body>
+</html>

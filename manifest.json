@@ -1,0 +1,17 @@
+{
+  "short_name": "aleksnyder.net",
+  "name": "aleksnyder.net",
+  "description": "Alek Snyder is a Maryland based Web Developer who enjoys planning, wireframing, and building websites.",
+  "icons": [
+    {
+      "src": "/user/themes/portfolio/build/img/logo_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#19A69A",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#19A69A"
+}

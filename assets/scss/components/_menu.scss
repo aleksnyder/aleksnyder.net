@@ -1,0 +1,190 @@
+.menu {
+    /*display: none;*/
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+    background: $accent-color;
+    @include bp(large-phone) {
+        display: block;
+        -ms-grid-column-span: 10;
+        -ms-grid-column: 3;
+        grid-column: span 10;
+        background: none;
+    }
+    ul {
+        padding: 2em;
+        @include bp(tablet) {
+            display: flex;
+            justify-content: flex-end;
+            flex-flow: row wrap;
+            padding: 0;
+            margin: 0.625em 0 0;
+        }
+    }
+    li {
+        padding: 1em 0 0.5em;
+        list-style-type: none;
+        &:first-child {
+            padding-top: 0;
+            @include bp(large-phone) {
+                padding-top: 1em;
+            }
+        }
+        &:not(:last-child) {
+            @include bp(large-phone) {
+                margin-right: 2em;
+            }
+        }
+    }
+    a {
+        display: block;
+        color: $yellow;
+        font-weight: bold;
+        transition: color 0.5s ease-in-out;
+        @include bp(tablet) {
+            color: #fff;
+        }
+        &:hover,
+        &:focus {
+            color: $yellow;
+        }
+    }
+}
+
+.menu-item--active {
+    border-bottom: 2px solid $yellow;
+    a {
+        color: $yellow;
+    }
+}
+
+.breadcrumbs {
+    height: 3rem;
+    line-height: 3rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: -2em 0 2em;
+    a > span {
+        text-decoration: underline;
+    }
+    span {
+        display: inline-block;
+    }
+}
+
+.divider {
+    width: 20px;
+    text-align: center;
+    padding: 0 0.5em;
+}
+
+.hamburger {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 50%;
+    background: $accent-color;
+    z-index: 99;
+    padding-right: 0;
+    svg {
+        fill: $yellow;
+    }
+}
+
+.menu {
+    @include bp(below-tablet) {
+        background-color: #454545;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 99;
+    }
+    button {
+        display: none;
+        @include bp(below-tablet) {
+            display: block;
+            background-color: #454545;
+            border: 0;
+            border-radius: 50%;
+            cursor: default;
+            padding: 0;
+            height: 52px;
+            width: 52px;
+            text-align: center;
+            position: fixed;
+            bottom: 14px;
+            right: 14px;
+            z-index: 100;
+        }
+
+        &:focus {
+            @include bp(below-tablet) {
+                outline: 2px dashed $yellow;
+            }
+        }
+    }
+    ul {
+        @include bp(below-tablet) {
+            visibility: hidden;
+            position: fixed;
+            right: 15px;
+            bottom: 65px;
+            z-index: 100;
+            padding: 0;
+            -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+            transition: -webkit-transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+        }
+    }
+    &.open {
+        .circle {
+            transform: translateX(50px) scale(9);
+        }
+        .line {
+            &.line-top {
+                -webkit-transform: translateY(3px) rotate(225deg);
+                transform: translateY(3px) rotate(225deg);
+                -webkit-transform-origin: center;
+                transform-origin: center;
+            }
+            &.line-bottom {
+                -webkit-transform: translateY(-3px) rotate(-225deg);
+                transform: translateY(-3px) rotate(-225deg);
+                -webkit-transform-origin: center;
+                transform-origin: center;
+            }
+        }
+        ul {
+            visibility: visible;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+}
+
+.line {
+    background-color: #fff;
+    display: block;
+    margin: 4px auto;
+    height: 2px;
+    width: 20px;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.circle {
+    display: block;
+    background-color: #454545;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    z-index: 99;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s ease-in-out;
+    @include bp(tablet) {
+        display: none;
+    }
+}

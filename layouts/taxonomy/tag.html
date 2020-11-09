@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<section class="section">
+    <h1>Articles Tagged "{{ .Name }}"</h1>
+
+    <ul>
+    {{ range .Data.Pages }}
+        <article class="grid posts">
+            <div class="row post">
+                <div class="cell">
+                    <time>{{ .PublishDate.Format "January 2, 2006" }}</time>
+                </div>
+                <div class="cell">
+                    <h2 class="post__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                </div>
+                <div class="cell tags">
+                    {{ partial "components/tags.html" . }}
+                </div>
+            </div>
+        </article>
+    {{ end }}
+    </ul>
+</section>
+{{ end }}

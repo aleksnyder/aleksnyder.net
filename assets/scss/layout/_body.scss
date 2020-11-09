@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    background: $bg-color-dark;
+    margin: 0;
+    font-family: $base-font-family;
+    color: $text-color-light;
+    @include bp(tablet) {
+        grid-template-rows: 70px 1fr auto;
+    }
+    &:focus {
+        @include bp(ie) {
+            outline: none;
+        }
+    }
+}

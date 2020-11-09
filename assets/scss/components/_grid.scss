@@ -1,0 +1,46 @@
+.inner {
+  grid-column: span 12;
+
+  width: 100%;
+  max-width: 72em;
+  margin: 0 auto;
+  padding: 0 1em 3em;
+  @include bp(tablet) {
+    padding: 0 2.5em 3em;
+  }
+}
+
+.grid {
+  display: grid;
+  align-items: stretch;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.grid-col-9 {
+  grid-column: span 9;
+}
+
+.grid-col-3 {
+  grid-column: span 3;
+}
+
+.grid-col-8 {
+  grid-column: span 8;
+}
+
+.grid-col-4 {
+  grid-column: span 4;
+}
+
+.grid-col-12 {
+  grid-column: span 12;
+}

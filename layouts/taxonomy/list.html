@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div>
+	<p class="tracking-widest pb-0 text-xs text-gray-700">
+		{{ i18n "tagged_in" | upper }}
+	</p>
+	<h2 class="mt-0 text-3xl">
+		{{ .Name | upper }}
+	</h2>
+
+	{{ .Content }}
+</div>
+{{ end }}

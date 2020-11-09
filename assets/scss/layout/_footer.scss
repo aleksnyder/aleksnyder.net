@@ -1,0 +1,74 @@
+.site-footer {
+    background: $primary-color;
+    z-index: 1;
+    width: 100%;
+    color: #15202b;
+    font-weight: 500;
+    @include grid;
+    padding: 1.5em 0;
+    /* autoprefixer: ignore next */
+    align-items: end;
+    box-sizing: border-box;
+    .inner {
+      @include grid;
+      padding-bottom: 0;
+    }
+    @include bp(desktop) {
+      padding: 1.5rem 0;
+    }
+    p {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  @-moz-document url-prefix() {
+    .footer {
+      position: relative;
+      height: auto;
+    }
+  }
+
+  .footer__social {
+    margin: 1em 0 0;
+    padding: 0;
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    @include bp(desktop) {
+      margin: 0;
+      -ms-grid-column-span: 6;
+      -ms-grid-column: 7;
+      grid-column: span 6;
+      justify-content: flex-end;
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+    a {
+      -webkit-transition: fill .3s cubic-bezier(.455,.03,.515,.955);
+      transition: fill .3s cubic-bezier(.455,.03,.515,.955);
+      padding: 0 .5em;
+      fill: $accent-color;
+      &:hover,
+      &:focus {
+        fill: $yellow;
+      }
+    }
+  }
+
+  .footer__info {
+    margin: 0 0 1.5em;
+    letter-spacing: .04em;
+    font-size: 1em;
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+    text-align: center;
+    @include bp(desktop) {
+      -ms-grid-column-span: 6;
+      grid-column: span 6;
+      text-align: left;
+    }
+  }

@@ -1,0 +1,84 @@
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 1em 0;
+  color: $primary-color;
+  text-align: center;
+  &:after {
+    content: '';
+    display: block;
+    height: .5rem;
+    width: 6.25rem;
+    margin: 3rem auto;
+    background-color: $primary-color;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 4rem 0 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 1.4em;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.25em;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0 0 1em;
+}
+
+a {
+  color: $yellow;
+  transition: all 0.2s ease;
+  transition-property: transform, opacity, color, border-color, background-color;
+
+  &:link,
+  &:visited {
+    color: $yellow;
+  }
+}
+
+:focus {
+  outline: 2px dashed currentColor;
+  outline-offset: 3px;
+}
+
+.color {
+  &--primary {
+    color: $primary-color;
+  }
+
+  &--secondary {
+    color: $yellow;
+  }
+
+  &--white {
+    color: #fff;
+  }
+}

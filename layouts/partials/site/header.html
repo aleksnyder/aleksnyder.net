@@ -1,0 +1,15 @@
+<ul class="skip">
+    <li><a href="#nav">skip to Main Navigation</a></li>
+    <li><a href="#content">skip to Main Content</a></li>
+    <li><a href="#footer">skip to Footer</a></li>
+</ul>
+<header class="site-header inner" role="banner">
+    <div class="logo">
+        <a class="logo__container" href="{{ .Site.BaseURL }}" title="Go to Homepage">
+            <span class="logo__initial">A</span>
+        </a>
+    </div>
+
+	<!-- Site Navigation -->
+    {{ partial "site/navigation.html" . }}
+</header>

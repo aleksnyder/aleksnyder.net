@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="section">
+    <h1 class="section-title grid-col-12">{{ .Title }}</h1>
+    <section class="works card-group" id="works">
+        {{ $paginator := .Paginate (where .Pages "Type" "works") }}
+        {{ range $paginator.Pages }}
+            <figure data-folio="{{ .Title }}" class="card">
+                <a class="card__wrapper" href="{{ .Permalink }}">
+                    <picture class="card__img">
+                        <source type="image/webp" srcset="/{{ .Params.thumbnail.webp }}">
+                        <source type="image/jpeg" srcset="/{{ .Params.thumbnail.jpg }}">
+                        <img src="/{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}">
+                    </picture>
+                    <figcaption class="card__details">
+                        <h3 class="card__title">{{ .Title }}</h3>
+                        <p>HTML, CSS, JS</p>
+                    </figcaption>
+                </a>
+            </figure>
+        {{ end }}
+    </section>
+</section>
+{{ end }}

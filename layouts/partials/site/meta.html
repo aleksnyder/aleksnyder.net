@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<meta name="author" content="Alek Snyder">
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#19a69a">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#19a69a">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#19a69a">
+
+{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+
+<!-- Open Graph Data -->
+<meta property="og:url" content="https://www.aleksnyder.net/">
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ .Title }} | aleksnyder.net">
+{{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:site_name" content="aleksnyder.net" />
+<meta property="og:image" content="https://www.aleksnyder.net/img/social.jpg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Title }} | aleksnyder.net">
+{{ with .Description }}<meta property="twitter:description" content="{{ . }}">{{ end }}
+<meta name="twitter:image" content="https://www.aleksnyder.net/img/social.jpg">
+<meta name="twitter:creator" content="@aleksnyder">
+<meta name="twitter:site" content="@aleksnyder">
+
+<link rel="shortcut icon" type="image/x-icon" href="/img/favicons/favicon.ico" />
+<link rel="canonical" href="https://www.aleksnyder.net" />
+<link rel="manifest" href="/manifest.json">

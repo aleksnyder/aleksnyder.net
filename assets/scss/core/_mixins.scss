@@ -1,0 +1,191 @@
+// Convert from pixels to em
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Calculate width of a column
+// Default value of maximum columns is 12
+@mixin col($col, $max-cols: 12) {
+  width: (100%/$max-cols)*$col;
+}
+
+@mixin thick-underline($color: #fff) {
+  content: "";
+  display: block;
+  margin: 0.2em 0 0 0;
+  width: 2em;
+  height: 0.3em;
+  background: $color;
+}
+
+@mixin thin-underline($color: #fff) {
+  content: "";
+  display: block;
+  position: relative;
+  top: -0.2em;
+  left: 2.5em;
+  height: 0.15em;
+  background: $color;
+}
+
+@mixin bp($point) {
+	$bp-large: "(min-width: 1280px)";
+	$bp-laptop: "(min-width: 1024px)";
+  $bp-desktop: "(min-width: 951px)";
+  $bp-below-tablet: "(max-width: 768px)";
+	$bp-tablet: "(min-width: 767px)";
+	$bp-large-phone: "(min-width: 600px)";
+  $bp-phone: "(min-width: 320px)";
+	$bp-global: "(min-width: 0px)";
+  $bp-firefox: "@-moz-document url-prefix()";
+  $bp-ie: "all and (-ms-high-contrast: none), (-ms-high-contrast: active)";
+
+  @if $point == large {
+    @media #{$bp-large} { @content; }
+	}
+	@if $point == laptop {
+    @media #{$bp-laptop} { @content; }
+  }
+  @else if $point == desktop {
+    @media #{$bp-desktop} { @content; }
+  }
+  @else if $point == tablet {
+    @media #{$bp-tablet} { @content; }
+  }
+  @else if $point == below-tablet {
+    @media #{$bp-below-tablet} {@content}
+  }
+	@else if $point == large-phone {
+    @media #{$bp-large-phone} { @content; }
+  }
+  @else if $point == phone {
+    @media #{$bp-phone} { @content; }
+  }
+  @else if $point == global {
+    @media #{$bp-global} { @content; }
+  }
+  @else if $point == ie {
+    @media #{$bp-ie} { @content; }
+	}
+}
+
+// A map of breakpoints.
+$breakpoints: (
+  phone-sm: 420px,
+  phone: 767px,
+  tablet: 768px,
+  tablet-lg: 1024px,
+  desktop: 1025px,
+  desktop-lg: 1600px
+);
+
+@mixin mq($breakpoint, $direction:up) {
+
+  // If the breakpoint exists in the map.
+  @if map-has-key($breakpoints, $breakpoint) {
+
+  // Get the breakpoint value.
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+  // Determine the direction and then write the media query.
+  @if $direction == up {
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  }
+  @else if $direction == down {
+    @media (max-width: $breakpoint-value) {
+      @content;
+       }
+    }
+  }
+  // If the breakpoint doesn't exist in the map, pass a manual breakpoint
+  @else {
+    @if $direction == up {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    }
+    @else if $direction == down {
+      @media (max-width: $breakpoint) {
+        @content;
+        }
+      }
+    }
+  }
+
+///
+/// Viewport sized typography with minimum and maximum values
+///
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback),
+///                 minumum of 35px and maximum of 150px
+///  @include responsive-font(5vw, 35px, 150px, 50px);
+///
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+/// Mixin to prefix a property
+/// @author Hugo Giraudel
+/// @param {String} $property - Property name
+/// @param {*} $value - Property value
+/// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+@mixin container {
+  max-width: 72em;
+  width: calc(100% - 1em);
+  margin: 0 auto;
+	padding: 0 0.5em;
+	@include bp(desktop) {
+		width: calc(100% - 4em);
+		padding: 0 2em;
+	}
+}
+
+@mixin grid {
+  -ms-grid-column-span: 12;
+  grid-column: span 12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}

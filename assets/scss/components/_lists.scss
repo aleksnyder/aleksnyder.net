@@ -1,0 +1,22 @@
+.tags {
+    display: inline-flex;
+    flex-flow: row wrap;
+  }
+
+  .tag {
+    background: #f2f8fa;
+    color: #4078c0;
+    border-radius: 3px;
+    margin: 0 0.5em 0.5em 0;
+    padding: 2px 8px;
+    text-decoration: none;
+    white-space: nowrap;
+    &:hover,
+    &:focus {
+      background: #cde4ec;
+    }
+    &:link,
+    &:visited {
+      color: #4078c0;
+    }
+  }

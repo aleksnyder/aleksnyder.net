@@ -1,0 +1,3 @@
+{{ $mainjs := resources.Get "js/main.js" }}
+{{ $scripts := slice $mainjs | resources.Concat "js/main.min.js" | minify |  fingerprint }}
+<script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" media="screen"></script>

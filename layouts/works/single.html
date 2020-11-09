@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<article class="section wrapper-sm">
+    <h1 class="section-title">{{ .Title }}</h1>
+    {{ .Content }}
+</article>
+
+{{ end }}
+
+{{ define "below_content" }}
+<div class="post__nav grid-col-12">
+    <div class="post__prev">
+        {{ if .NextInSection }}
+            <a href="{{.NextInSection.Permalink}}">&laquo; {{.NextInSection.Title}}</a>
+        {{ end }}
+    </div>
+    <div class="post__next">
+        {{ if .PrevInSection }}
+            <a href="{{.PrevInSection.Permalink}}">&laquo; {{.PrevInSection.Title}}</a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

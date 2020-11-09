@@ -1,0 +1,39 @@
+$primary-color: #19a69a;
+$accent-color: #242A32;
+$gray: #A4A4A4;
+$black: #242A32;
+$orange: #fc4a1a;
+$yellow: #f7b733;
+$light-gray: #dfdce3;
+$bg-color: #fbfcfe;
+$bg-color-dark: #15202b;
+
+// Text variables
+$base-font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$heading-font-family: $base-font-family;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$text-color:       #676767;
+$text-color-light: #f4f4f4;
+$background-color: #fdfdfd;
+$brand-color:      #004094;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+$works-1:  #02B9B5;
+$works-2:  #E5595C;
+$works-3:  #2b5876;
+$works-4:  #acb6e5;
+
+$works-1-hover: darken($works-1, 20%);
+$works-2-hover: darken($works-2, 20%);
+$works-3-hover: darken($works-3, 20%);
+$works-4-hover: darken($works-4, 20%);

@@ -1,0 +1,59 @@
+{{ define "json_ld" }}
+<script type="application/ld+json">
+    {
+     "@context": "http://schema.org",
+     "@type": "Person",
+     "email": "mailto:asnyder0816@gmail.com",
+     "jobTitle": "Software Developer",
+     "name": "Alek Snyder",
+     "url": "https://www.aleksnyder.net",
+     "sameAs" : [ "https://www.facebook.com/aleksnyder",
+     "https://www.linkedin.com/in/aleksnyder",
+     "http://twitter.com/aleksnyder"]
+   }
+</script>
+{{ end }}
+
+{{ define "main" }}
+{{ partial "components/intro.html" . }}
+
+<h2>Recent Work I've Done</h2>
+<section class="works card-group" id="works">
+    {{ range first 3 (where .Site.RegularPages "Type" "works")}}
+        <figure data-folio="{{ .Title }}" class="card">
+            <a class="card__wrapper" href="{{ .Permalink }}">
+                <picture class="card__img">
+                    <source type="image/webp" srcset="{{ .Params.thumbnail.webp }}">
+                    <source type="image/jpeg" srcset="{{ .Params.thumbnail.jpg }}">
+                    <img src="{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}">
+                </picture>
+                <figcaption class="card__details">
+                    <h3 class="card__title">{{ .Title }}</h3>
+                    <p>HTML, CSS, JS</p>
+                </figcaption>
+            </a>
+        </figure>
+    {{ end }}
+</section>
+
+<section class="notes section">
+    <h2>Recent Notes</h2>
+    <section class="recent-posts">
+        {{ range first 3 (where .Site.RegularPages "Type" "notes")}}
+            <article class="grid posts">
+                <div class="row post">
+                    <div class="cell">
+                        <time>{{ .PublishDate.Format "January 2, 2006" }}</time>
+                    </div>
+                    <div class="cell">
+                        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    </div>
+                    <div class="cell tags">
+                        {{ partial "components/tags.html" . }}
+                    </div>
+                </div>
+            </article>
+        {{ end }}
+    </section>
+</section>
+{{ end }}
