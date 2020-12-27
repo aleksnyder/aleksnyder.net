@@ -5,7 +5,7 @@
 
   .tag {
     background: #f2f8fa;
-    color: #4078c0;
+    color: $bg-color-dark;
     border-radius: 3px;
     margin: 0 0.5em 0.5em 0;
     padding: 2px 8px;
@@ -17,6 +17,6 @@
     }
     &:link,
     &:visited {
-      color: #4078c0;
+      color: $bg-color-dark;
     }
   }
