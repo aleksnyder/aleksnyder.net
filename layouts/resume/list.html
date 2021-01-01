@@ -1,6 +1,22 @@
 {{ define "main" }}
-<section class="section">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-</section>
+<div class="inner">
+  <section class="section resume">
+
+    <div class="resume__controls">
+      <a href="/files/alek_snyder_resume.pdf">Download (120 KB)</a>
+      <a href="#" onClick="window.print()">Print</a>
+    </div>
+
+    <div class="section--sm">
+      <h1>Alek Snyder</h1>
+
+      <div class="contact-information">
+        <a href="mailto:asnyder0816@gmail.com">asnyder0816@gmail.com</a>
+        <a href="https://www.aleksnyder.net" title="Go to aleksnyder.net">https://www.aleksnyder.net</a>
+      </div>
+
+      {{ .Content }}
+    </div>
+  </section>
+</div>
 {{ end }}

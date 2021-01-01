@@ -14,15 +14,10 @@ images:
   webp: img/jekyll-cv.webp
 ---
 
-**Tools:**
-HTML, CSS, JavaScript
-
-**Roles:**
-UX Designer, Developer
-
-**Project URL:**
-[http://www.bdmenterprisesllc.net/](http://www.bdmenterprisesllc.net/)
-
+## Project Overview
 Early in 2015, I was approached by BDM Enterprises LLC. to build a website for them. Their goal was to attract new customers in Central Maryland. I was tasked by BDM to build a website which was simple, responsive, and easy to use.
 
 {{< screenshot src="bdm-redux.jpg" alt="BDM Enterprises website in a browser" >}}
+
+## Responsibilities
+I designed and built the BDM Enterprises site from scratch using plain ol' HTML,CSS, and JavaScript.

@@ -1,0 +1,56 @@
+.resume {
+  h1 {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    &:after {
+      margin: 1rem auto;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin: 1em 0;
+    padding: .5em 0;
+    border-top: 1px solid #676767;
+    border-bottom: 1px solid #676767;
+  }
+  .contact-info {
+    margin-bottom: 0;
+  }
+  ul,
+  p {
+    margin: 0;
+  }
+
+  ul + p {
+    margin: 1em 0 0;
+  }
+}
+
+.resume__controls {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  margin: 0.5em;
+  @include bp(ie) {
+    top: 70px;
+  }
+  a {
+    padding: .5em;
+    &:first-of-type {
+      margin-right: 1em;
+    }
+  }
+}
+
+.contact-information {
+  margin: 1em 0;
+
+  a {
+    display: block;
+    text-align: center;
+  }
+
+  @include bp(ie) {
+    margin-bottom: 2em;
+  }
+}

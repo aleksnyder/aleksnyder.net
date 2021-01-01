@@ -1,23 +1,41 @@
 {{ define "main" }}
-<section class="section">
-    <h1 class="section-title grid-col-12">{{ .Title }}</h1>
-    <section class="works card-group" id="works">
-        {{ $paginator := .Paginate (where .Pages "Type" "works") }}
-        {{ range $paginator.Pages }}
-            <figure data-folio="{{ .Title }}" class="card">
-                <a class="card__wrapper" href="{{ .Permalink }}">
-                    <picture class="card__img">
-                        <source type="image/webp" srcset="/{{ .Params.thumbnail.webp }}">
-                        <source type="image/jpeg" srcset="/{{ .Params.thumbnail.jpg }}">
-                        <img src="/{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}">
-                    </picture>
-                    <figcaption class="card__details">
-                        <h3 class="card__title">{{ .Title }}</h3>
-                        <p>HTML, CSS, JS</p>
-                    </figcaption>
-                </a>
-            </figure>
-        {{ end }}
-    </section>
+<section class="section wrapper padding-bottom-0">
+    <div class="inner">
+        <div class="section-intro">
+            <section class="section-intro__content">
+                <h1 class="section-intro__title grid-col-12">Selected Works</h1>
+                <h2 class="section-subtitle">On this page you will find a few of my favorite projects – both personal and as part of an agency.</h2>
+                <p>Working freelance and as part of an agency have equipped me with a huge variety of experiences that I couldn't possibly list just here. You can see a more technical breakdown of my skillset on my <a href="/about">about</a> page, however, talk to me about your project and I will do my best to prepare examples of specific related works.</p>
+            </section>
+            <aside class="section-intro__sidebar">
+                <div class="callout">
+                    <h2 class="callout__title">Elsewhere</h2>
+                    <p>For even more recent work, you can find me coding on <a href="https://github.com/aleksnyder" rel="noopener noreferrer">GitHub</a> or posting some <a href="/notes">notes</a>.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <div class="container-breakout callout">
+        <div class="inner">
+            <section class="section works card-group" id="works">
+                {{ $paginator := .Paginate (where .Pages "Type" "works") }}
+                {{ range $paginator.Pages }}
+                    <figure data-folio="{{ .Title }}" class="card">
+                        <a class="card__wrapper" href="{{ .Permalink }}">
+                            <picture class="card__img">
+                                <source type="image/webp" srcset="/{{ .Params.thumbnail.webp }}">
+                                <source type="image/jpeg" srcset="/{{ .Params.thumbnail.jpg }}">
+                                <img src="/{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}">
+                            </picture>
+                            <figcaption class="card__details">
+                                <h3 class="card__title">{{ .Title }}</h3>
+                                <p>HTML, CSS, JS</p>
+                            </figcaption>
+                        </a>
+                    </figure>
+                {{ end }}
+            </section>
+        </div>
+    </div>
 </section>
 {{ end }}

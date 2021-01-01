@@ -14,15 +14,12 @@ images:
   webp: img/jekyll-cv.webp
 ---
 
-**Tools:**
-WordPress, PHP, HTML, CSS, JavaScript
-
-**Roles:**
-Web Architect, UX Designer, Developer
-
-**Project URL:**
-[https://web.archive.org/web/20141223183508/http://www.aaos.net/content/](https://web.archive.org/web/20141223183508/http://www.aaos.net/content/)
-
+## Project Overview
 Anne Arundel Orthopedic Surgeons is a privately-owned doctor's office which specializes in procedures concerning muscles, joints, bones and the spine. I redesigned this site and optimized it for WordPress. In addition, I rebuilt the underlying structure to enable the site to be viewed on all devices.
 
 {{< screenshot src="aaos.jpg" alt="Anne Arundel Orthopedic Surgeons website in a browser" >}}
+
+## Responsibilities
+I designed and built AAOS in WordPress to allow for easier content moderation.  My main goal was to take an existing HTML site and migrate the site over to WordPress.  As well as giving the site a little facelift.
+
+AAOS was my first freelance project and was an incredible learning experience.

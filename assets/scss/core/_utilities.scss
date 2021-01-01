@@ -7,3 +7,7 @@
 .sr-only {
     @include sr-only();
 }
+
+.text-align--center {
+  text-align: center;
+}

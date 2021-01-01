@@ -5,17 +5,6 @@ display_title: Alek C. Snyder
 html_class: resume
 ---
 
-<div class="resume__controls">
-  <a href="/files/alek_snyder_resume.pdf">Download (120 KB)</a>
-  <a href="#" onClick="window.print()">Print</a>
-</div>
-
-<div class="contact-information" markdown="1">
-[(301)-291-5690](tel:301-291-5690 "Call 301-291-5690")
-[asnyder0816@gmail.com](mailto:asnyder0816@gmail.com)
-[https://www.aleksnyder.net](https://www.aleksnyder.net "Go to aleksnyder.net")
-</div>
-
 I am a hardworking and passionate web developer, constantly looking to better myself and provide everything I can to an equally dedicated team of developers.
 
 I have five years of professional web development experience, with knowledge of front-end and back-end design.

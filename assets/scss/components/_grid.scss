@@ -1,13 +1,40 @@
 .inner {
   grid-column: span 12;
-
   width: 100%;
   max-width: 72em;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 1em 3em;
   @include bp(tablet) {
     padding: 0 2.5em 3em;
   }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 72em) [main-end]
+    minmax(1em, 1fr) [full-end];
+
+  > * {
+    grid-column: main;
+  }
+}
+
+.wrapper-sm {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 46em) [main-end]
+    minmax(1em, 1fr) [full-end];
+
+  > * {
+    grid-column: main;
+  }
+}
+
+.container-breakout {
+  grid-column: full;
 }
 
 .grid {

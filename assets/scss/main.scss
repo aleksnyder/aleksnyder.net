@@ -3,7 +3,6 @@
 @import
   "core/variables",
   "core/mixins",
-  "core/utilities",
   "base/reset",
   "base/typography",
   "base/figure",
@@ -13,9 +12,13 @@
   "layout/footer",
   "components/menu",
   "components/grid",
+  "components/hero",
   "components/posts",
   "components/lists",
   "components/cards",
+  "components/links",
   "components/timeline",
-  "components/prism"
+  "components/prism",
+  "pages/resume",
+  "core/utilities"
 ;

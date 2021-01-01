@@ -74,9 +74,9 @@ select {
   font: inherit;
 }
 
-/* Blur images when they have no alt attribute */
+/* Don't forget the 'alt' attribute */
 img:not([alt]) {
-  filter: blur(10px);
+  border: 5px solid red;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

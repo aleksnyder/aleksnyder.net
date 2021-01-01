@@ -10,18 +10,20 @@
     grid-column: span 12;
     display: flex;
     justify-content: center;
-    margin: 3em 0;
-    img {
-      border-radius: 100%;
-    }
-    & + h1 {
-      margin-top: 0;
+    margin: 4rem 0 2rem;
+    border-radius: 50%;
+    border: 6px solid $yellow;
+    @include bp(ie) {
+      width: 220px;
+      height: auto;
     }
   }
+
 
   .profile-pic + h1,
   .accolades {
     grid-column: span 12;
+    margin-top: 0;
   }
 
   .description {
@@ -49,8 +51,8 @@
       &:hover,
       &:focus {
         color: $yellow;
-        h4,
-        .subtitle {
+        .profile-links__title,
+        .porfile-links__subtitle {
           color: $yellow;
         }
       }
@@ -58,12 +60,18 @@
         margin-bottom: 2em;
       }
     }
-    h4 {
+    &__title {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700;
       margin: 0;
       color: $yellow;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       transition: color 0.5s ease-in-out;
     }
-    .subtitle {
+    &__subtitle {
+      display: block;
       color: #f4f4f4;
       transition: color 0.5s ease-in-out;
     }
@@ -76,6 +84,7 @@
       grid-column: span 6;
     }
     h3 {
+      color: $primary-color;
       font-size: 1.25em;
     }
   }
@@ -167,7 +176,13 @@
     margin-bottom: 100px;
     margin-top: 0;
     @include bp(tablet) {
-      width: 50%;
+      width: 40%;
+    }
+
+    .company-info {
+      @include bp(tablet) {
+        padding-right: 0;
+      }
     }
   }
 
@@ -211,7 +226,7 @@
 
   .cc-right {
     @include bp(tablet) {
-      margin-left: 50%;
+      margin-left: 60%;
     }
     .cc-in {
       @include bp(tablet) {
@@ -256,15 +271,6 @@
         padding-left: 45%;
         margin-left: 30px;
       }
-    }
-  }
-
-  .profile-pic {
-    margin: 0 auto;
-    border-radius: 50%;
-    @include bp(ie) {
-      width: 220px;
-      height: auto;
     }
   }
 

@@ -1,0 +1,47 @@
+.link {
+  color: $yellow;
+  text-decoration: underline;
+
+  &--back {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      color: $bg-light;
+      text-decoration: none;
+    }
+  }
+
+  &--visit {
+    display: inline-block;
+    background-color: $bg-light;
+    color: $bg-color-dark-accent;
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0.75rem 1rem;
+    margin: 0 0 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+
+    &:hover,
+    &:focus {
+      background-color: #D6D6D6;
+    }
+
+    &:visited,
+    &:link {
+      color: $bg-color-dark-accent;
+    }
+  }
+}
+
+.work-cta {
+  margin: 3rem 0 1rem;
+  text-align: center;
+}

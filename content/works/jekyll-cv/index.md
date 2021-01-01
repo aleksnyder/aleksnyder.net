@@ -17,12 +17,6 @@ images:
 **Tools:**
 Jekyll, Ruby, YAML, SCSS
 
-**Roles:**
-UX Designer, Developer
-
-**Project URL:**
-[https://github.com/aleksnyder/jekyll-cv](https://github.com/aleksnyder/jekyll-cv)
-
 A Jekyll theme for those looking for a clean, minimalistic theme for their online CV/Resume on all devices.  Additionally, Jekyll CV follows Google's material design standards for its bold colors and modern design.  Possibly its greatest feature is how the content is generated.  Update the section-specific data file and the theme will generate the necessary markup during the build process.  No need to update HTML or Markdown inside the theme.
 
 {{< screenshot src="jekyll-cv-desktop.jpg" alt="Jekyll CV theme in a browser" >}}

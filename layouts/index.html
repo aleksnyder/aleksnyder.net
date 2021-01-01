@@ -15,7 +15,8 @@
 {{ end }}
 
 {{ define "main" }}
-{{ partial "components/intro.html" . }}
+<div class="inner">
+    {{ partial "components/intro.html" . }}
 
 <h2>Recent Work I've Done</h2>
 <section class="works card-group" id="works">
@@ -55,5 +56,6 @@
             </article>
         {{ end }}
     </section>
-</section>
+  </section>
+</div>
 {{ end }}

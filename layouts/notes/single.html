@@ -1,9 +1,11 @@
 {{ define "main" }}
 
-<article class="section wrapper-sm">
-    <h1 class="section-title">{{ .Title }}</h1>
-    {{ .Content }}
-</article>
+<div class="inner">
+    <article class="section wrapper-sm">
+        <h1 class="section-title">{{ .Title }}</h1>
+        {{ .Content }}
+    </article>
+</div>
 
 {{ $prismjs := resources.Get "js/prism.js" }}
 {{ $prism := slice $prismjs | resources.Concat "js/prism.min.js" | minify | fingerprint }}
