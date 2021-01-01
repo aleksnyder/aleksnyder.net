@@ -3,6 +3,7 @@ title: Resume
 visible: false
 display_title: Alek C. Snyder
 html_class: resume
+description: "A web-friendly version of Alek Snyder's resume."
 ---
 
 I am a hardworking and passionate web developer, constantly looking to better myself and provide everything I can to an equally dedicated team of developers.

@@ -7,6 +7,10 @@
 			{{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
 		{{ end }}</title>
 
+		{{ with .OutputFormats.Get "RSS" }}
+		<link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+		{{ end }}
+
 		{{ range .AlternativeOutputFormats }}
 			<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 		{{ end }}

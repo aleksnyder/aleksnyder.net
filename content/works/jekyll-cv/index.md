@@ -1,6 +1,6 @@
 ---
 title: Jekyll CV
-description: A Jekyll theme for those looking for a clean, minimalistic theme for their online CV/Resume on all devices.  Additionally, Jekyll CV follows Google's material design standards for its bold colors and modern design.  Possibly its greatest feature is how the content is generated.  Update the section-specific data file and the theme will generate the necessary markup during the build process.  No need to update HTML or Markdown inside the theme.
+description: A Jekyll theme for those looking for a clean, minimalistic theme for their online CV/Resume on all devices.
 date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
 techs: [Jekyll, Ruby, YAML, SCSS]

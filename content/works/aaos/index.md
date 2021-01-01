@@ -1,6 +1,6 @@
 ---
 title: AAOS
-description: Anne Arundel Orthopedic Surgeons is a privately-owned doctor's office which specializes in procedures concerning muscles, joints, bones and the spine.  I redesigned this site and optimized it for WordPress.  In addition, I rebuilt the underlying structure to enable the site to be viewed on all devices.
+description: Anne Arundel Orthopedic Surgeons is a privately-owned doctor's office which specializes in procedures concerning muscles, joints, bones and the spine.
 date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
 techs: [HTML, CSS, JS, WordPress]
