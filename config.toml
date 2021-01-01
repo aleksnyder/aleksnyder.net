@@ -1,3 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "aleksnyder.net"
+
+[taxonomies]
+  tag = "tags"
