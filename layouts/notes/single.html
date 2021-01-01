@@ -4,6 +4,13 @@
     <article class="section wrapper-sm">
         <h1 class="section-title">{{ .Title }}</h1>
         {{ .Content }}
+
+        <div class="tags-group">
+            <p>Posted in:  </p>
+            <div class="cell tags">
+                {{ partial "components/tags.html" . }}
+            </div>
+        </div>
     </article>
 </div>
 

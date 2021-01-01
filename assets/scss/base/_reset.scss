@@ -76,7 +76,7 @@ select {
 
 /* Don't forget the 'alt' attribute */
 img:not([alt]) {
-  border: 5px solid red;
+  outline: 5px solid red;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

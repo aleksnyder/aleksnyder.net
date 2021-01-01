@@ -104,3 +104,14 @@
   margin: 0;
   font-size: 1.1em;
 }
+
+.tags-group {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 3rem 0 0;
+
+  p {
+    margin: 0 0.5rem 0.75rem 0;
+  }
+}
