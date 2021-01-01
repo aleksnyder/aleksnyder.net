@@ -2,12 +2,9 @@
 title:  "Using the :not() property"
 description: Why you should already be using the :not() CSS psuedoclass when writing CSS.
 excerpt: When building a site, a designer or developer usually runs into a situation where a element needs certain styling but other elements do not.  This could be anything from bottom padding to borders.  Usually the designer or developer would write CSS for the one element and then additional CSS for the other elements.  Which is fine; but over time this adds many lines of CSS to your code base and increases page load time.  Surely there's a better way right?
-categories: blog
 tags:
 - css
 - sass
-taxonomy:
-    tag: [css, sass]
 date: 2017-06-25
 publishdate: 2017-06-25
 ---

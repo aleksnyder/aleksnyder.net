@@ -2,13 +2,10 @@
 title:  "Running git commands in WSL"
 description: Setup git to use with Bash on Windows 10 local development environments.
 excerpt: This is part 1 in an ongoing series detailing how to setup Windows Subsystem for Linux, or WSL, for Local Development.  In this section, we'll install, configure, and use git.
-categories: blog
 tags:
 - local development
 - git
 - wsl
-taxonomy:
-    tag: [wsl, local development, git]
 date: 2017-02-26
 publishdate: 2017-02-26
 ---

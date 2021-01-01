@@ -1,7 +1,6 @@
 ---
 title:  "Named vHosts in WSL2"
 description: Figure out the best approach to use named virtual hosts for either Apache or Nginx in WSL2.
-categories: blog
 tags:
 - local development
 - wsl

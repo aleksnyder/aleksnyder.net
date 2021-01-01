@@ -10,9 +10,12 @@
     grid-column: span 12;
     display: flex;
     justify-content: center;
-    margin: 4rem 0 2rem;
+    margin: 0 0 2rem;
     border-radius: 50%;
     border: 6px solid $yellow;
+    @include bp(tablet) {
+      margin: 4rem 0 2rem;
+    }
     @include bp(ie) {
       width: 220px;
       height: auto;
