@@ -11,7 +11,7 @@ publishdate: 2017-06-25
 
 When building a site, a designer or developer usually runs into a situation where an element needs certain styling but other elements do not.  This could be anything from bottom padding to borders.  Usually the designer or developer would write CSS for the one element and then additional CSS for the other elements.  Which is fine; but over time this adds many lines of CSS to your code base and increases page load time.  Surely there's a better way right?  There is and you should be using the `:not()` CSS psudo class wherever possible.
 
-## Introducing :not()
+{{< h2 >}}Introducing :not(){{< /h2 >}}
 
 The `:not()` psuedoclass is incredibly useful and easy to use.  It's used similarly to jQuery's [.not()](http://api.jquery.com/not/) function.  Basically, any CSS element that does not match what's inside the psuedoclass' parenthesis will be styled.
 
@@ -37,7 +37,7 @@ Without the `:not()` psuedoclass more lines of code would be needed.  Also, a sm
 
 For more information on the `:not()` psuedoclass,  see [MDN's page](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) on the subject.
 
-## More Use Cases of :not()
+{{< h2 >}}More Use Cases of :not(){{< /h2 >}}
 
 In this section, I've included more use cases for the `:not()` psuedoclass.  I'll be updating this section periodically to include more examples.
 

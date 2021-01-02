@@ -14,7 +14,7 @@ This is part 2 in an ongoing series detailing how to setup Windows Subsystem for
 
 For background on WSL and information detailing how to use `Git` in Windows 10, see [Part 1](https://www.aleksnyder.net/blog/windows-10-local-development-git/).
 
-## Installing Apache
+{{< h2 >}}Installing Apache{{< /h2 >}}
 
 Use the `apt` package management tools to update your local package index.  Next, install Apache.
 
@@ -25,7 +25,7 @@ sudo apt-get install apache2
 
 Check the IP address of your local WSL installation.  It should be `127.0.0.1` or [Localhost](http://localhost).
 
-## Enabling Apache Mods
+{{< h2 >}}Enabling Apache Mods{{< /h2 >}}
 
 Sometimes popular Apache mods like `rewrite` or `headers` are needed for CMS's like WordPress. Luckily, you can install them within WSL.
 
@@ -37,7 +37,7 @@ The above command downloads and enables the `rewrite` Apache mod to your WSL env
 
 Now with `apache` installed and any necessary mods enabled, you can serve web pages in Windows 10.  Next, we'll setup a simple `.conf` file and point the document root to one of your mounted drives.
 
-## Setup a Simple Conf
+{{< h2 >}}Setup a Simple Conf{{< /h2 >}}
 
 What if you want to setup another hostname for your local project besides `localhost`?  Could this project be located in another directory?  The answer to both questions is yes!
 
@@ -112,6 +112,6 @@ Don't forget to update your computer's hosts file.
 
 You should now be able to see your site at [http://site.dev](http://site.dev).  If you're having issues with the site displaying properly, check the `.conf` file.  Maybe the directory or another configuration has an incorrect setting.
 
-## Conclusion
+{{< h2 >}}Conclusion{{< /h2 >}}
 
 That's it for setting up Apache on your Windows 10 computer.  In the next Windows 10 Local Development post, we'll install Ruby and some Ruby gems!

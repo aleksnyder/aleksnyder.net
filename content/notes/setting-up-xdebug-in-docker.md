@@ -13,7 +13,7 @@ When searching how to integrate Xdebug into my Docker workflow, I hit a blocker 
 
 Even after following the instructions on PHPStorm's [zero configuration debugging](https://www.jetbrains.com/help/phpstorm/zero-configuration-debugging.html) help page, I couldn't reach Xdebug.  Something was missing.  The answer was frustratingly simple...my `php.ini` was missing a few lines.
 
-## PHP.ini Confguration
+{{< h2 >}}PHP.ini Confguration{{< /h2 >}}
 
 Inside the container's `php.ini`, these lines made all the difference:
 
@@ -37,7 +37,7 @@ xdebug.idekey = PHPSTORM  # Name of the cookie
 xdebug.remote_log=/tmp/xdebug.log  # Useful logs for troubleshooting
 {{< /prism >}}
 
-## Tips & Tricks
+{{< h2 >}}Tips & Tricks{{< /h2 >}}
 
 * Go to [https://www.jetbrains.com/phpstorm/marklets/](https://www.jetbrains.com/phpstorm/marklets/) or use Xdebug Helper extension.
 * If using Apache in your container, sometimes restarting Apache is required for changes to take effect.

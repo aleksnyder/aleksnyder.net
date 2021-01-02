@@ -13,15 +13,15 @@ publishdate: 2016-03-15
 
 When developing websites, it's very important to keep accessibility in mind.  But sometimes you need more than the alt attribute, you need ARIA.
 
-## What is ARIA?
+{{< h2 >}}What is ARIA?{{< /h2 >}}
 ARIA (Assistive Rich Internet Applications), is a spec from the W3C and created to improve accessibility of applications by providing extra information to screen readers via HTML attributes. Out of the box, screen readers work with regular HTML, but adding ARIA can provide screen reader users with more context and greater interactivity with content.
 
 ARIA has no effect on how elements are displayed or behave in browsers. It does not add new functionality and is meant to act only as an extra descriptive layer for screen readers.
 
-## ARIA Attributes
+{{< h2 >}}ARIA Attributes{{< /h2 >}}
 ARIA attributes are predefined in the spec and are divided into two categories, roles and states & properties. Both can be added directly in the markup or via JavaScript and should be updated as needed based on user interactions. There are rules behind which elements may receive types of ARIA attributes, as well as design guidelines for how and when these should be updated in common interactive widgets.
 
-## ARIA Roles
+{{< h2 >}}ARIA Roles{{< /h2 >}}
 An ARIA role is added via <code>a role="ROLE-TYPE"</code> attribute and does not change for an element once set. There are four categories of ARIA roles.
 
 ### Landmark
@@ -36,15 +36,15 @@ Widget roles describe common interactive patterns that currently lack semantic e
 ### Abstract
 Abstract roles are only used by browsers to help organize and streamline a document, and never by developers to mark up HTML. They are not mapped onto screen readers and provide no extra accessibility information directly between HTML and screen reader.
 
-## States and Properties
+{{< h2 >}}States and Properties{{< /h2 >}}
 ARIA states and properties are often used to support ARIA roles that exist on a page. Properties often describe relationships with other elements and for the most part, do not change once they’re set. States are more dynamic and are typically updated with JavaScript as a user interacts with a page. It’s common to refer to states and properties collectively as just ARIA attributes. Screen readers are notified when attributes change and can announce these changes to users after an interaction takes place.
 
-## When to use ARIA
+{{< h2 >}}When to use ARIA{{< /h2 >}}
 Native HTML semantics should still be used whenever possible, but ARIA is useful when certain design patterns or interactions make it impossible to do so. For example, a complex tabbed-interface has no semantic equivalent with HTML, but `<a role="tablist"></a>` and its related attributes can be added to provide this detail to screen readers. ARIA is also useful to describe newer HTML elements that may not yet have full cross-browser support or be understood by screen readers.
 
 To create accessible applications, basic principles of semantic HTML, keyboard support, and color contrast should still be the primary focus of developers. ARIA may be used to “fill in the blanks” where web page information isn’t understood or available to a screen reader via HTML alone.
 
-## ARIA Examples
+{{< h2 >}}ARIA Examples{{< /h2 >}}
 
 ### Landmark role
 

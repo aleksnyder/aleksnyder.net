@@ -12,7 +12,7 @@ publishdate: 2017-02-26
 
 This is part 1 in an ongoing series detailing how to setup Windows Subsystem for Linux, or WSL, for Local Development.  In this section, we'll install, configure, and use `git`.
 
-## Background
+{{< h2 >}}Background{{< /h2 >}}
 
 In the Summer of 2016, Microsoft released the first anniversary update for their Windows 10 operating system.  The anniversary update included a feature sought after by developers for years, a separate, dedicated Linux environment built into Windows.  Microsoft is continually adding new features, commands, and support for web technologies within the Windows Subsystem for Linux.  This post won't go over the process of installing Windows Subsystem for Linux (I'll use WSL from now on), WSL already goes into detail about the installation process.  Below is a list of useful links for reference.
 
@@ -23,7 +23,7 @@ In the Summer of 2016, Microsoft released the first anniversary update for their
 * [List of Programs that work and don't work](https://github.com/ethanhs/WSL-Programs)
 * [Tips and Guides for new BASH users](https://github.com/abergs/ubuntuonwindows)
 
-## Installing Git
+{{< h2 >}}Installing Git{{< /h2 >}}
 
 Using the `apt` package management tools to update your local package index.  Next, update and install the program.
 
@@ -50,7 +50,7 @@ $ git init
 
 In the above command, we mounted the C: drive, navigated the main user folder, and switched to the Documents folder.  After changing to the directory, we initialized a git repository inside the Documents folder.  Make sure to replace `your-username` with your desktop's username, usually first initial and last name.  If you're unsure what your username is open Windows Explorer and navigate to your Users folder in the C: drive.  The username you'll use should be inside there.  WSL can mount any drive recognized by your computer and can access nearly every folder within the selected drive as long as you know the path.
 
-## Setting up Git
+{{< h2 >}}Setting up Git{{< /h2 >}}
 
 Before moving onto an example of using `git` in WSL, we need to configure `git` within our system.  Mainly so our commit messages have a name and email attached to them.
 
@@ -67,7 +67,7 @@ We can see all items within `git config` object by typing the following command:
 $ git config --list
 {{< /prism >}}
 
-## Using Git in WSL
+{{< h2 >}}Using Git in WSL{{< /h2 >}}
 
 For this example, we'll clone one of my git repos onto your Windows 10 desktop.  It's a simple application built using AngularJS, which pulls all upcoming trains plus their information using the [WMATA Developer API](https://developer.wmata.com/) and displays the data in a table.
 
@@ -106,6 +106,6 @@ After committing your change, you can push the code changes to origin.  If you c
 $ git push origin master
 {{< /prism >}}
 
-## Conclusion
+{{< h2 >}}Conclusion{{< /h2 >}}
 
 That's it for setting up Git on your Windows 10 computer.  In the next Windows 10 Local Development post, we'll install Apache and configure `.conf` files to point to your C: drive.  That's right!  A web server built into Windows 10!
