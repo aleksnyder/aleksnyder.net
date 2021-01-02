@@ -1,4 +1,5 @@
-<pre class="language-bash">
+{{ $language := index .Params 0 }}
+<pre class="language-{{ $language }}">
     <code>
         {{ .Inner }}
     </code>
