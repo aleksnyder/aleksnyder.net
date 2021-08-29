@@ -129,6 +129,7 @@
     padding: 0.1rem 1rem;
     border: 0;
     border-radius: 1px;
+    word-break: break-all;
   }
 
   pre {
@@ -138,7 +139,8 @@
       background:#2d313a;
       color: #c4d1e1;
       border: 0;
-      overflow-y: scroll;
+      overflow: auto;
+      border-radius: 3px;
     }
   }
 
