@@ -12,6 +12,9 @@
             </div>
         </div>
     </article>
+    {{ with .Params.includeTOC }}
+        {{ .TableOfContents }}
+    {{ end }}
 </div>
 
 {{ $prismjs := resources.Get "js/prism.js" }}

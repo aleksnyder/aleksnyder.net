@@ -126,8 +126,8 @@
     display: inline-block;
     background:#343536;
     color: #f4f4f4;
-    padding: 0.1rem 1rem;
-    border: 0;
+    padding: 0.1rem 0.25rem;
+    border: 1px solid #94929D;
     border-radius: 1px;
     word-break: break-all;
   }
@@ -141,12 +141,14 @@
       border: 0;
       overflow: auto;
       border-radius: 3px;
+      padding: 0.625rem;
     }
   }
 
   code[class*="language-"],
   pre[class*="language-"] {
     background:#2d313a;
+    border: 1px solid #94929D;
 
     .tag {
         background-color: transparent;

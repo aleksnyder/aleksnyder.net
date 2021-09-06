@@ -1,8 +1,9 @@
 .site-footer {
-    background: $primary-color;
+    background: $bg-color-dark-accent;
+    border-top: 5px solid $primary-color;
     z-index: 1;
     width: 100%;
-    color: #15202b;
+    color: $text-color-light;
     font-weight: 500;
     @include grid;
     padding: 1.5em 0;
@@ -51,7 +52,7 @@
       -webkit-transition: fill .3s cubic-bezier(.455,.03,.515,.955);
       transition: fill .3s cubic-bezier(.455,.03,.515,.955);
       padding: 0 .5em;
-      fill: $accent-color;
+      fill: $text-color-light;
       &:hover,
       &:focus {
         fill: $yellow;
