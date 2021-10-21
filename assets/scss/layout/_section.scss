@@ -85,7 +85,9 @@
 
 .callout {
     padding: 2rem 1.5rem;
-    background: $bg-color-dark-accent;
+    background: #00000c;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+    border-radius: 0.8rem;
 
     &__title {
         text-transform: none;

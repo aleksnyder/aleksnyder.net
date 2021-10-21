@@ -28,8 +28,25 @@
     [main-start] minmax(0, 46em) [main-end]
     minmax(1em, 1fr) [full-end];
 
-  > * {
+  > .section {
     grid-column: main;
+  }
+}
+
+.has-sidebar {
+  gap: 2rem;
+  grid-template-columns:
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 46em) [main-end]
+    minmax(1em, 1fr) [full-end];
+  margin: 6rem 0 0;
+  @include mq(tablet-lg) {
+    grid-template-columns:
+      [main-start] minmax(0, 46em) [main-end sidebar-start] 1fr [sidebar-end];
+  }
+
+  .section-title {
+    margin: 0 0 3rem;
   }
 }
 

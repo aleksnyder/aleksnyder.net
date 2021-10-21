@@ -48,7 +48,7 @@ Then head over to `http://site.local` to see your changes.
 
 Unfortunately with WSL2 the same process no longer works.  What's different?
 
-{{< h2 >}}Attempt #1:  Retrieve Current IP Address{{< /h2 >}}
+{{< h2 >}}Attempt #1: Retrieve Current IP Address{{< /h2 >}}
 
 When WSL2's virtual machine is provisioned, a new IP address is provisioned too.  The simplest, albeit tedious, approach would be to pull the IP address from the current WSL2 instance and update the hosts file.
 
@@ -71,7 +71,7 @@ Let's say I restart my computer later that day after successfully accessing `htt
 
 If we try the earlier `grep` command and update the hosts file again, we see that it works again.  Not the most efficient process.
 
-{{< h2 >}}Attempt #2:  Update the hosts file in WSL2 and Windows{{< /h2 >}}
+{{< h2 >}}Attempt #2: Update the hosts file in WSL2 and Windows{{< /h2 >}}
 
 After using the first attempt for a while, I wanted a better approach.  I started thinking about how similar WSL2 would be to any other Linux server.  My first thought was to update the hosts file within my WSL2 instance.  If it works in Windows why not Linux too?
 

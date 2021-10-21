@@ -124,10 +124,9 @@
  **/
  code {
     display: inline-block;
-    background:#343536;
+    background: #00000c;
     color: #f4f4f4;
     padding: 0.1rem 0.25rem;
-    border: 1px solid #94929D;
     border-radius: 1px;
     word-break: break-all;
   }
@@ -137,7 +136,8 @@
     > code {
       display: block;
       background:#2d313a;
-      color: #c4d1e1;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+      color:#D4D4D4;
       border: 0;
       overflow: auto;
       border-radius: 3px;
@@ -147,12 +147,23 @@
 
   code[class*="language-"],
   pre[class*="language-"] {
-    background:#2d313a;
-    border: 1px solid #94929D;
+    background: #00000c;
 
     .tag {
         background-color: transparent;
         padding: 0;
         margin: 0 0 0.5em 0;
     }
+  }
+
+  pre[class*="language-"] {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+    padding: 0 3.2rem;
+    border-radius: 0.8rem;
+    color:#D4D4D4;
+    text-align: start;
+    word-spacing: normal;
+    word-break: normal;
+    tab-size: 2;
+    overflow-x: auto;
   }

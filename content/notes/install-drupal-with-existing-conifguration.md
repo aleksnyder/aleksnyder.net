@@ -16,7 +16,7 @@ In this post, we'll create a new Drupal site from existing configuration without
 
 First, turn off Drupal's setting to validate a configuration file's uuid with the site uuid.  Changing this setting would work with the custom profile method too.
 
-{{< prism yaml >}}
+{{< prism bash >}}
 drupal settings:set overrides.config.skip-validate-site-uuid true
 {{< /prism >}}
 
@@ -53,7 +53,7 @@ commands:
       cache: all
 {{< /prism >}}
 
-{{< prism yaml >}}
+{{< prism bash >}}
 drupal chain --file="/var/www/config/build.yml"
 {{< /prism >}}
 

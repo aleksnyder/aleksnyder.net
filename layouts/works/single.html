@@ -1,16 +1,18 @@
 {{ define "main" }}
 
-<article class="section wrapper-sm">
-    <h1 class="page-title">{{ .Title }}</h1>
-    {{ .Content }}
-
-    {{ with .Params.projectUrl }}
-        <div class="work-cta">
-            <a class="link--visit" href="{{ . }}">Visit site</a>
-            <a class="link--back" href="/works">View more projects</a>
-        </div>
-    {{ end }}
-</article>
+<div class="wrapper-sm">
+    <article class="section">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ .Content }}
+    
+        {{ with .Params.projectUrl }}
+            <div class="work-cta">
+                <a class="link--visit" href="{{ . }}">Visit site</a>
+                <a class="link--back" href="/works">View more projects</a>
+            </div>
+        {{ end }}
+    </article>
+</div>
 
 {{ $prismjs := resources.Get "js/prism.js" }}
 {{ $prism := slice $prismjs | resources.Concat "js/prism.min.js" | minify | fingerprint }}

@@ -4,3 +4,9 @@ title = "aleksnyder.net"
 
 [taxonomies]
   tag = "tags"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

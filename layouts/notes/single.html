@@ -1,20 +1,31 @@
 {{ define "main" }}
 
-<div class="inner">
-    <article class="section wrapper-sm">
-        <h1 class="section-title">{{ .Title }}</h1>
-        {{ .Content }}
+{{ $container_class := "wrapper-sm" }}
+{{ if .Params.toc }}
+    {{ $container_class = "wrapper-sm has-sidebar" }}
+{{ end }}
 
-        <div class="tags-group">
-            <p>Posted in:  </p>
-            <div class="cell tags">
-                {{ partial "components/tags.html" . }}
+<div class="inner">
+    <div class="{{ $container_class }}">
+        <article class="section">
+            <h1 class="section-title">{{ .Title }}</h1>
+            {{ .Content }}
+    
+            <div class="tags-group">
+                <p>Posted in:  </p>
+                <div class="cell tags">
+                    {{ partial "components/tags.html" . }}
+                </div>
             </div>
-        </div>
-    </article>
-    {{ with .Params.includeTOC }}
-        {{ .TableOfContents }}
-    {{ end }}
+
+            <div class="discuss">
+                <p>Thoughts/opinions? <a href="https://twitter.com/aleksnyder">@aleksnyder</a> on twitter</p>
+            </div>
+        </article>
+        {{ if .Params.toc }}
+            {{ partial "components/toc.html" . }}
+        {{ end }}
+    </div>
 </div>
 
 {{ $prismjs := resources.Get "js/prism.js" }}

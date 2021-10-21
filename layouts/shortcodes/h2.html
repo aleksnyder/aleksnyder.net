@@ -1,5 +1,4 @@
 {{ $anchorized := anchorize .Inner }}
-<h2 id="{{ $anchorized }}">
-  {{ .Inner }}
-  <a class="named-anchor" href="#{{ $anchorized }}">#</a>
-</h2>
+
+<a name="{{ $anchorized }}" tabindex="-1"></a>
+<h2 id="{{ $anchorized }}">{{ .Inner }}<a class="named-anchor" href="#{{ $anchorized }}">#</a></h2>

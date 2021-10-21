@@ -1,0 +1,41 @@
+.sidebar {
+  display: none;
+  grid-column: sidebar;
+  padding: 3rem 0;
+
+  @include mq(tablet-lg) {
+    display: block;
+  }
+}
+
+.table-of-contents {
+  position: sticky;
+  top: 60px;
+}
+
+.toc {
+  &__link,
+  &__link:visited,
+  &__link:link {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &__link {
+    font-weight: 500;
+
+    &--active,
+    &--active:visited,
+    &--active:link {
+      color: $yellow;
+      text-decoration: underline;
+
+      &::before {
+        content: ' ';
+        width: 2px;
+        height: 100%;
+        background-color: $primary-color;
+      }
+    }
+  }
+}

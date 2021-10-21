@@ -1,6 +1,6 @@
 {{ $language := index .Params 0 }}
 <pre class="language-{{ $language }}">
-    <code>
+    <code class="language-{{ $language }}">
         {{ string .Inner }}
     </code>
 </pre>
