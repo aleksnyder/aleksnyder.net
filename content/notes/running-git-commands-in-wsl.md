@@ -27,12 +27,11 @@ In the Summer of 2016, Microsoft released the first anniversary update for their
 
 Using the `apt` package management tools to update your local package index.  Next, update and install the program.
 
-{{< prism bash >}}
-$ sudo apt-get update
-$ sudo apt-get install git
+{{< prism bash single >}}
+sudo apt-get update && sudo apt-get install git
 {{< /prism >}}
 
-{{< prism bash >}}
+{{< prism bash single >}}
 sudo a2ensite site.dev.conf
 {{< /prism >}}
 
@@ -63,8 +62,8 @@ $ git config --global user.email "youremail@domain.com"
 
 We can see all items within `git config` object by typing the following command:
 
-{{< prism bash >}}
-$ git config --list
+{{< prism bash single >}}
+git config --list
 {{< /prism >}}
 
 {{< h2 >}}Using Git in WSL{{< /h2 >}}
@@ -102,8 +101,8 @@ $ git commit -m "Modified the title"
 
 After committing your change, you can push the code changes to origin.  If you created another branch from master, replace master in the push statement below with your branch name.
 
-{{< prism bash >}}
-$ git push origin master
+{{< prism bash single >}}
+git push origin master
 {{< /prism >}}
 
 {{< h2 >}}Conclusion{{< /h2 >}}

@@ -56,33 +56,33 @@ To create accessible applications, basic principles of semantic HTML, keyboard s
 The `<nav>` element has been given a landmark role allowing screen reader users navigate directly to this element.
 
 {{< prism html >}}
-  &lt;nav role="navigation"&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a href="/"&gt;Home&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href="/about"&gt;About Us&lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
+  <nav role="navigation"></nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About Us</a>
+      </li>
+    </ul>
+  </nav>
 {{< /prism >}}
 
 
 ### aria-labelledby
 
 <pre><code class="language-bash">
-&lt;section aria-labelledby="header"&gt;
-  &lt;h2 id="header"&gt;My Creative Heading&lt;/h2&lt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
-&lt;/section&gt;
+<section aria-labelledby="header">
+  <h2 id="header">My Creative Heading</h2<
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</section>
 </code></pre>
 
 {{< prism html >}}
-  &lt;section aria-labelledby="header"&gt;
-    &lt;h2 id="header"&gt;My Creative Heading&lt;/h2&lt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;
-  &lt;/section&gt;
+  <section aria-labelledby="header">
+    <h2 id="header">My Creative Heading</h2<
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </section>
 {{< /prism >}}
 
 The `<section>` element includes the ARIA property aria-labelledby which lists the ID of the section title. Screen readers will announce this title when they reach the `<section>` element, giving users a sense of the content contained in this portion.
@@ -90,16 +90,16 @@ The `<section>` element includes the ARIA property aria-labelledby which lists t
 ### Role, state, and property together in a Tab control
 
 {{< prism html >}}
-  &lt;ul role="tablist"&gt;
-    &lt;li&gt;
-      &lt;a href="#first-tab" role="tab" aria-selected="true" aria-controls="first-tab"&gt;Panel 1&lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="#second-tab" role="tab" aria-selected="false" aria-controls="second-tab"&gt;Panel 2&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div id="first-tab" role="tabpanel"&gt;&lt;/div&gt;
-  &lt;div id="second-tab" role="tabpanel"&gt;&lt;/div&gt;
+  <ul role="tablist">
+    <li>
+      <a href="#first-tab" role="tab" aria-selected="true" aria-controls="first-tab">Panel 1</a>
+    </li>
+    <li>
+      <a href="#second-tab" role="tab" aria-selected="false" aria-controls="second-tab">Panel 2</a>
+    </li>
+  </ul>
+  <div id="first-tab" role="tabpanel"></div>
+  <div id="second-tab" role="tabpanel"></div>
 {{< /prism >}}
 
 Each element has an ARIA role and attributes to create a complete tab widget. The relationship between a tab link and tab panel is now available to screen readers.

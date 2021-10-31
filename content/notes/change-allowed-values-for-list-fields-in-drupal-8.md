@@ -17,7 +17,7 @@ What is the client wants to change the field's setting after data has already be
 {{< h2 >}}Steps to alter field values{{< /h2 >}}
 
 **Step 1:  Create module using [Drupal Console](https://drupalconsole.com/docs/en/commands/generate-module) to contain global override function**
-{{< prism bash >}}
+{{< prism bash single >}}
   drupal generate:module
 {{< /prism >}}
 

@@ -131,22 +131,23 @@
     word-break: break-all;
   }
 
-  pre {
+pre {
     padding: 0;
-    > code {
-      display: block;
-      background:#2d313a;
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
-      color:#D4D4D4;
-      border: 0;
-      overflow: auto;
-      border-radius: 3px;
-      padding: 0.625rem;
-    }
-  }
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+    > code {
+        display: block;
+        background:#2d313a;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+        color:#D4D4D4;
+        border: 0;
+        overflow: auto;
+        border-radius: 3px;
+        padding: 0.625rem;
+    }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
     background: #00000c;
 
     .tag {
@@ -154,9 +155,9 @@
         padding: 0;
         margin: 0 0 0.5em 0;
     }
-  }
+}
 
-  pre[class*="language-"] {
+pre[class*="language-"] {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
     padding: 0 3.2rem;
     border-radius: 0.8rem;
@@ -166,4 +167,38 @@
     word-break: normal;
     tab-size: 2;
     overflow-x: auto;
-  }
+}
+
+.code-block {
+    position: relative;
+
+    &__header {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__button {
+        border-bottom-left-radius: 0.8rem;
+    }
+}
+
+code {
+    &.code-block--single-line {
+        white-space: normal;
+        padding: 3.2rem 0;
+    }
+
+    &.code-block--single-line.language-bash::before {
+        content: "$ ";
+    }
+}
+
+#copy-notice {
+    background: #D4D4D4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    z-index: 2;
+}

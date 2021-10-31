@@ -15,10 +15,10 @@ Ever had a client ask for a new, modern site but require compatibility with Inte
 How would you handle applying a fix to the inevitable visual bug in IE?  In the past, there was a really simple way to only load certain files or content in IE.  For whatever reason Microsoft decided to remove this helpful condition.  Look how easy it used to be:
 
 {{< prism html >}}
-  &lt;!--[if IE]&gt;
-    &lt;link href=&quot;/path/to/ie.css&quot; rel=&quot;stylesheet&quot; /&gt;
-	  &lt;p&gt;Only people using IE see this message.&lt;/p&gt;
-  &lt;![endif]--&gt;
+  <!--[if IE]>
+    <link href="/path/to/ie.css" rel="stylesheet" />
+	  <p>Only people using IE see this message.</p>
+  <![endif]-->
 {{< /prism >}}
 
 Internet Explorer 11 doesn't support the conditional tag any longer. Luckily, there's a handy CSS media query to target Internet Explorer 11:
@@ -31,14 +31,14 @@ Internet Explorer 11 doesn't support the conditional tag any longer. Luckily, th
 
 What if you wanted your main stylesheet clean of any IE related code?  You can't use the conditonal comment since Microsoft removed it.  User agents can be spoofed.  What do you use?  Recently I was looking at the MDN for clarification on the preload attribute for the [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag.  I noticed an attribute I've only used for loading print stylesheets. Enter the `<link>` tag's `media` attribute.  The `media` attribute will load any file referenced in the `href` attribute of the `<link>` tag which matches the specified media query.  If we wanted to load a specific stylesheet for devices with a screen size below 600px, we would add the following snippet inside the `<head>` tag of the page:
 
-{{< prism bash >}}
-  &lt;link href=&quot;mobile.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen and (max-width: 600px)&quot;&gt;
+{{< prism html >}}
+  <link href="mobile.css" rel="stylesheet" media="screen and (max-width: 600px)">
 {{< /prism >}}
 
 Now, we can use this discovery to load a stylesheet only for IE 11:
 
-{{< prism bash >}}
-  &lt;link href=&quot;/path/to/ie.css&quot; rel=&quot;stylesheet&quot; media=&quot;all and (-ms-high-contrast: none), (-ms-high-contrast: active)&quot;&gt;
+{{< prism html >}}
+  <link href="/path/to/ie.css" rel="stylesheet" media="all and (-ms-high-contrast: none), (-ms-high-contrast: active)">
 {{< /prism >}}
 
 That's it!  Not exactly the same as the conditional comment block; but at least you can load a separate stylesheet for IE users.

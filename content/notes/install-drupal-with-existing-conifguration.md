@@ -10,13 +10,13 @@ date: 2021-08-20
 publishdate: 2021-08-20
 ---
 
-Sometimes a developer wants to provision a Drupal site from a shared configuration.  Each site beginning with the same settings, same enabled modules, and the same active theme.  In the past, you would use the [https://www.drupal.org/project/config_installer](Config Installer) module to stand up a new site from existing configuration.  Unfortunately this project is now deprecated.  So what now?  A developer could either create a custom profile to remove all `uuid` key values from each configuration file in the profile (usually the first line) or create a chain command to run multiple drupal console commands at once.
+Sometimes a developer wants to provision a Drupal site from a shared configuration.  Each site beginning with the same settings, same enabled modules, and the same active theme.  In the past, you would use the [Config Installer](https://www.drupal.org/project/config_installer) module to stand up a new site from existing configuration.  Unfortunately this project is now deprecated.  So what now?  A developer could either create a custom profile to remove all `uuid` key values from each configuration file in the profile (usually the first line) or create a chain command to run multiple drupal console commands at once.
 
 In this post, we'll create a new Drupal site from existing configuration without worrying Drupal throwing an error about the configuration not matching the site `uuid`.
 
 First, turn off Drupal's setting to validate a configuration file's uuid with the site uuid.  Changing this setting would work with the custom profile method too.
 
-{{< prism bash >}}
+{{< prism bash single >}}
 drupal settings:set overrides.config.skip-validate-site-uuid true
 {{< /prism >}}
 
@@ -53,7 +53,7 @@ commands:
       cache: all
 {{< /prism >}}
 
-{{< prism bash >}}
+{{< prism bash single >}}
 drupal chain --file="/var/www/config/build.yml"
 {{< /prism >}}
 

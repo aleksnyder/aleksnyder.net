@@ -18,9 +18,8 @@ For background on WSL and information detailing how to use `Git` in Windows 10, 
 
 Use the `apt` package management tools to update your local package index.  Next, install Apache.
 
-{{< prism bash >}}
-sudo apt-get update
-sudo apt-get install apache2
+{{< prism bash single >}}
+sudo apt-get update && sudo apt-get install apache2
 {{< /prism >}}
 
 Check the IP address of your local WSL installation.  It should be `127.0.0.1` or [Localhost](http://localhost).
@@ -29,7 +28,7 @@ Check the IP address of your local WSL installation.  It should be `127.0.0.1` o
 
 Sometimes popular Apache mods like `rewrite` or `headers` are needed for CMS's like WordPress. Luckily, you can install them within WSL.
 
-{{< prism bash >}}
+{{< prism bash single >}}
 sudo a2enmod rewrite
 {{< /prism >}}
 
@@ -53,7 +52,7 @@ touch site.dev.conf
 Next, edit the `.conf` file you created and add the desired configuration options.  Below is an example you can use site URL is `site.dev` and the folder is located inside your `Users` directory.
 
 {{< prism bash >}}
-&lt;VirtualHost *:80&gt;
+<VirtualHost *:80></VirtualHost>
   # The ServerName directive sets the request scheme, hostname and port that
   # the server uses to identify itself. This is used when creating
   # redirection URLs. In the context of virtual hosts, the ServerName
@@ -66,10 +65,10 @@ Next, edit the `.conf` file you created and add the desired configuration option
   ServerAdmin webmaster@localhost
   DocumentRoot /mnt/c/Users/username/localdev/site
 
-  &lt;Directory /mnt/c/Users/username/localdev/site-folder&gt;
+  <Directory /mnt/c/Users/username/localdev/site-folder>
       Options Indexes FollowSymLinks MultiViews
       Require all granted
-  &lt;/Directory&gt;
+  </Directory>
 
   # Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
   # error, crit, alert, emerg.
@@ -86,27 +85,26 @@ Next, edit the `.conf` file you created and add the desired configuration option
   # following line enables the CGI configuration for this host only
   # after it has been globally disabled with "a2disconf".
   #Include conf-available/serve-cgi-bin.conf
-&lt;/VirtualHost&gt;
+</VirtualHost>
 {{< /prism >}}
 
 The above `.conf` file allows you to edit files directly on your Windows machine without having to edit them on the server or use FTP!  This makes development much easier.  Save the `.conf` file using `CTRL + x` and type `y` at the prompt.
 
 Once the `.conf` file is saved, type the following command into WSL:
 
-{{< prism bash >}}
+{{< prism bash single >}}
 sudo a2ensite site.dev.conf
 {{< /prism >}}
 
 This automatically enables your `site.dev.conf` file in the `/etc/apache2/sites-enabled` directory.  Without this step you won't see anything when you go to `site.dev` in your browser.  Finally, restart apache.
 
-{{< prism bash >}}
+{{< prism bash single >}}
 sudo service apache2 restart
 {{< /prism >}}
 
 Don't forget to update your computer's hosts file.
 
-{{< prism bash >}}
-#WSL
+{{< prism bash single >}}
 127.0.0.1           site.dev
 {{< /prism >}}
 

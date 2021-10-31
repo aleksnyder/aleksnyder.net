@@ -1,5 +1,6 @@
 const menuIcon = document.querySelector(".menu > button");
 const tableOfContents = document.querySelector(".table-of-contents");
+copyButtons = document.querySelectorAll(".code-block__button");
 
 menuIcon.addEventListener('click', function() {
   document.querySelector(".menu").classList.toggle("open");
@@ -39,3 +40,24 @@ if (tableOfContents) {
     });
   });
 }
+
+copyButtons.forEach(copyButton => {
+  copyButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    let codeBlock = copyButton.closest(".code-block");
+    codeBlock = codeBlock.querySelector(".code-block__markup").textContent;
+    const messagePlaceholder = copyButton.nextElementSibling;
+    oldCopyNotice = document.getElementById("copy-notice");
+
+    if (oldCopyNotice) { oldCopyNotice.remove(); }
+
+    message = document.createElement("span");
+    message.setAttribute("id", "copy-notice");
+    message.setAttribute("aria-live", "assertive");
+    message.innerHTML = "Copied to clipboard!";
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(codeBlock);
+    messagePlaceholder.append(message);
+  });
+});

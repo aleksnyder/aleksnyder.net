@@ -35,12 +35,12 @@ server {
 {{< /prism >}}
 
 **2.  Reload NGINX**
-{{< prism bash >}}
+{{< prism bash single >}}
 sudo service nginx reload
 {{< /prism >}}
 
 **3.  Update hosts file with site.local**
-{{< prism bash >}}
+{{< prism bash single >}}
 127.0.0.1 site.local
 {{< /prism >}}
 
@@ -54,14 +54,14 @@ When WSL2's virtual machine is provisioned, a new IP address is provisioned too.
 
 Using `grep` we can retrieve the current IP address:
 
-{{< prism bash >}}
+{{< prism bash single >}}
 grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'
 {{< /prism >}}
 
 As an example, the returned IP address from the above command would be `172.29.112.1`.
 
 Now update the hosts file with this IP address to see the site again:
-{{< prism bash >}}
+{{< prism bash single >}}
 172.29.112.1 site.local
 {{< /prism >}}
 
@@ -76,12 +76,12 @@ If we try the earlier `grep` command and update the hosts file again, we see tha
 After using the first attempt for a while, I wanted a better approach.  I started thinking about how similar WSL2 would be to any other Linux server.  My first thought was to update the hosts file within my WSL2 instance.  If it works in Windows why not Linux too?
 
 **1.  Edit /etc/hosts file in WSL2 and add the local site**
-{{< prism bash >}}
+{{< prism bash single >}}
 127.0.0.1 site.local
 {{< /prism >}}
 
 **2.  Update the Windows hosts file with the local site**
-{{< prism bash >}}
+{{< prism bash single >}}
 127.0.0.1 site.local
 {{< /prism >}}
 
