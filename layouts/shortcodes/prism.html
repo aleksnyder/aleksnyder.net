@@ -4,7 +4,6 @@
     <div class="code-block__header">
         <span class="code-block__language">{{ upper $language }}</span>
         <button type="submit" class="code-block__button">Copy to clipboard</button>
-        <span></span>
     </div>
     <code class="code-block__markup language-{{ $language }}{{ $extra_class }}">
         {{ string .Inner }}

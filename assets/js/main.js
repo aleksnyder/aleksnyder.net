@@ -45,8 +45,9 @@ copyButtons.forEach(copyButton => {
   copyButton.addEventListener("click", (e) => {
     e.preventDefault();
     let codeBlock = copyButton.closest(".code-block");
+    const codeBlockHeader = codeBlock.querySelector(".code-block__header");
     codeBlock = codeBlock.querySelector(".code-block__markup").textContent;
-    const messagePlaceholder = copyButton.nextElementSibling;
+    const messagePlaceholder = codeBlockHeader.nextElementSibling;
     oldCopyNotice = document.getElementById("copy-notice");
 
     if (oldCopyNotice) { oldCopyNotice.remove(); }
