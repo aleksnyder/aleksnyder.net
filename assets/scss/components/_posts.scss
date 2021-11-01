@@ -6,21 +6,19 @@
   }
   
   h2 {
-    --fluid-type-min: 1.8rem;
-    --fluid-type-max: 3rem;
+    --fluid-type-min: 1.4rem;
+    --fluid-type-max: 2.3rem;
   }
   
   h3 {
-    --fluid-type-min: 1.5rem;
-    --fluid-type-max: 2.5rem;
+    --fluid-type-min: 1.1rem;
+    --fluid-type-max: 2rem;
   }
   
   h1,
   h2,
   h3 {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
     line-height: 1.1;
-    max-width: 30ch;
   }
 
   p {
@@ -30,7 +28,8 @@
   h1,
   h2,
   h3,
-  p {
+  p,
+  time {
     font-size: clamp(
       var(--fluid-type-min, 1rem),
       calc(1rem + var(--fluid-type-target, 3vw)),
@@ -147,6 +146,18 @@
 .post__title {
   margin: 0;
   font-size: 1.1em;
+}
+
+.post__meta {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 0 2rem;
+}
+
+.post__date {
+  font-style: italic;
+  margin: 0 2rem 0.75rem 0;
 }
 
 .tags-group {

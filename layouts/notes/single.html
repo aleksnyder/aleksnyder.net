@@ -9,14 +9,15 @@
     <div class="{{ $container_class }}">
         <article class="section article">
             <h1 class="section-title">{{ .Title }}</h1>
-            {{ .Content }}
-    
-            <div class="tags-group">
-                <p>Posted in:  </p>
-                <div class="cell tags">
+
+            <div class="post__meta">
+                <time class="post__date">{{ .PublishDate.Format "January 2, 2006" }}</time>
+                <div class="tags">
                     {{ partial "components/tags.html" . }}
                 </div>
             </div>
+
+            {{ .Content }}
 
             <div class="discuss">
                 <p>Thoughts/opinions? <a href="https://twitter.com/aleksnyder">@aleksnyder</a> on twitter</p>
