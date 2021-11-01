@@ -8,16 +8,20 @@
   h2 {
     --fluid-type-min: 1.4rem;
     --fluid-type-max: 2.3rem;
+    text-transform: none;
   }
   
   h3 {
     --fluid-type-min: 1.1rem;
-    --fluid-type-max: 2rem;
+    --fluid-type-max: 1.4rem;
+    text-transform: none;
+    margin: 1rem 0;
   }
   
   h1,
   h2,
   h3 {
+    letter-spacing: 1px;
     line-height: 1.1;
   }
 

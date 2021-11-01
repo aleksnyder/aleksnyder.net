@@ -16,14 +16,14 @@ What is the client wants to change the field's setting after data has already be
 
 {{< h2 >}}Steps to alter field values{{< /h2 >}}
 
-**Step 1:  Create module using [Drupal Console](https://drupalconsole.com/docs/en/commands/generate-module) to contain global override function**
+### Step 1:  Create module using [Drupal Console](https://drupalconsole.com/docs/en/commands/generate-module) to contain global override function
 {{< prism bash single >}}
   drupal generate:module
 {{< /prism >}}
 
 Note:  Make sure to include a .module file
 
-**Step 2:  Add the global function in the module's .module file**
+### 2:  Add the global function in the module's .module file
 
 {{< prism php >}}
   <?php
@@ -43,7 +43,8 @@ Note:  Make sure to include a .module file
    }
 {{< /prism >}}
 
-**Step 3:  Find the configuration file and add the global function**
+
+### Step 3:  Find the configuration file and add the global function
 In your project's synced configuration folder, look for the field's storage configuration.  The name would look something like `field.storage.paragraph.field_name_of_your_field.yml`.
 
 Inside the storage configuration file, look for the `allowed_values_function` key.  Add the global function's name to replace the existing values with the new list array.
