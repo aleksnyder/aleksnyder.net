@@ -1,3 +1,44 @@
+.article {
+  h1 {
+    --fluid-type-min: 2.5rem;
+    --fluid-type-max: 4rem;
+    --fluid-type-target: 4vw;
+  }
+  
+  h2 {
+    --fluid-type-min: 1.8rem;
+    --fluid-type-max: 3rem;
+  }
+  
+  h3 {
+    --fluid-type-min: 1.5rem;
+    --fluid-type-max: 2.5rem;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    line-height: 1.1;
+    max-width: 30ch;
+  }
+
+  p {
+    max-width: 65ch;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    font-size: clamp(
+      var(--fluid-type-min, 1rem),
+      calc(1rem + var(--fluid-type-target, 3vw)),
+      var(--fluid-type-max, 1.3rem)
+    );
+  }
+}
+
 .featured-articles {
     grid-column: span 12;
     padding: 0 0 5em;
