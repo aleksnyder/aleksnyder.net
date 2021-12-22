@@ -1,19 +1,9 @@
 .article {
-  h1 {
-    --fluid-type-min: 2.5rem;
-    --fluid-type-max: 4rem;
-    --fluid-type-target: 4vw;
-  }
-  
   h2 {
-    --fluid-type-min: 1.4rem;
-    --fluid-type-max: 2.3rem;
     text-transform: none;
   }
   
   h3 {
-    --fluid-type-min: 1.1rem;
-    --fluid-type-max: 1.4rem;
     text-transform: none;
     margin: 1rem 0;
   }
@@ -27,18 +17,6 @@
 
   p {
     max-width: 65ch;
-  }
-
-  h1,
-  h2,
-  h3,
-  p,
-  time {
-    font-size: clamp(
-      var(--fluid-type-min, 1rem),
-      calc(1rem + var(--fluid-type-target, 3vw)),
-      var(--fluid-type-max, 1.3rem)
-    );
   }
 }
 
