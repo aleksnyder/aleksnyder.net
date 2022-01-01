@@ -69,7 +69,9 @@
   padding: 0.5rem 0;
 
   h3 {
-    font-size: var(--size-400);
+    @include bp(desktop) {
+      font-size: var(--size-400);
+    }
   }
 }
 
