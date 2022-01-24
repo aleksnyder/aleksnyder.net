@@ -1,5 +1,5 @@
 {
-    "name": "hugo-starter-project",
+    "name": "aleksnyder",
     "private": true,
     "scripts": {
       "start": "hugo server",
