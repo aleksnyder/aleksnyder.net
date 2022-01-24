@@ -2,8 +2,9 @@
 <div class="inner">
   <section class="section resume">
 
+    {{ $resume := os.Stat "/static/files/alek_snyder_resume.pdf" }}
     <div class="resume__controls">
-      <a href="/files/alek_snyder_resume.pdf">Download (120 KB)</a>
+      <a href="/files/alek_snyder_resume.pdf">Download ({{ substr $resume.Size 0 2}} KB)</a>
       <a href="#" onClick="window.print()">Print</a>
     </div>
 
