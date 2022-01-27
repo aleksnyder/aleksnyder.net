@@ -1,0 +1,28 @@
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+a,
+a:link,
+a:visited {
+  color: #000;
+}
+
+.site-header,
+.site-footer,
+.resume__controls {
+  display: none;
+}
+
+h1 {
+  color: #000;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.resume h1 {
+  margin: 0 0 2rem;
+}

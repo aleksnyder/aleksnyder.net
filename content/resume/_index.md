@@ -6,46 +6,52 @@ html_class: resume
 description: "A web-friendly version of Alek Snyder's resume."
 ---
 
-I am a hardworking and passionate web developer, constantly looking to better myself and provide everything I can to an equally dedicated team of developers.
+I am a hardworking and passionate web developer, constantly looking to better myself and provide
+everything I can to an equally dedicated team of developers.
 
-I have five years of professional web development experience, with knowledge of front-end and back-end design.
+I have over five years of professional web development experience, with knowledge of front-end and
+back-end development.
 
 
 ## Professional Strengths
 
 **Web Technologies**
-* CSS (Sass, Less, PostCSS, Bootstrap, Foundation)
-* Jekyll, WordPress, Drupal
-* Jenkins, PHPUnit, JUnit
-* Version Control
-* Node.js (Grunt, Gulp, Bower, NPM, Testing scripts)
+* Jekyll, WordPress, Drupal, Hugo, Grav
+* Jenkins, Unit Testing, Docker, Kubernetes
+* Node.js (Grunt, Gulp, Puppeteer, NPM Scripts, Microservices)
 
-**Programming Languages**
-* HTML and CSS
-* Javascript (jQuery, AngularJS, VueJS, PhantomJS)
-* XML and JSON
-* XSLT
-* PHP and MySQL (Symfony, Twig, Composer)
+**Programming Language Experience**
+* CSS (Sass, Less, PostCSS, Bootstrap, Foundation)
+* Javascript (React, AngularJS, VueJS)
+* MySQL, PostgreSQL, MariaDB
+* Python, Go
+* PHP (Symfony, Laravel, Composer)
 
 ## Work Experience
 
-**Senior Web Developer - Booz Allen Hamilton.** (March 2015 - Present)
+**Lead Engineer - Booz Allen Hamilton.** (March 2015 - Present)
 
-Member of a team tasked with moving the U.S. Department of Health and Human Services and FDA to Drupal from other platforms.
+Full-stack developer responsible for end-to-end web development and enhancing the client’s user
+experience.
 
-* Automated process of migrating content from older environments to Drupal.
-* Lead the efforts to move development workflow to DevOps and contribute to Open Source.
-* Enhanced site functionality with custom Drupal 7 & Drupal 8 modules.
-* Transitioned existing Drupal 7 sites to Drupal 8.
+* Proposed software solutions which lead to a multimillion-dollar contract.
+* Collaborated with multiple teams to implement a widely used development platform.
+* Developed microservices to integrate with Azure services and send data to front-end tools like
+React.
+* Built programming tools and custom software to reduce development time.
+* Led client efforts to integrate with third-party services such as login.gov.
+* Served as technical lead for a team of developers on high-profile client projects.
 
 **Web Developer - Arbola Inc.** (February 2013 - March 2015)
 
-Member of a team dedicated to building and maintaining several web-based initiatives for Department of Health and Human Services.
+Member of a team dedicated to building, improving and maintaining USAID’s web presence.
 
-* Designed and developed WordPress themes, Drupal themes, and static HTML sites.
-* Operated and maintained five Google Search Appliances.
-* Optimized the agency's Google Analytics services and assumed the role of Administrator for all the agency's accounts.
-* Webmaster of several sites integral to USAID's mission.
+* Designed and developed WordPress themes, Drupal themes, Drupal modules, Google Search
+Appliance Frontends, and static HTML sites for USAID.
+* Successfully planned, developed, and launched a modernized Intranet site.
+* Advised USAID on current web technologies, trends, and tools and why we should use them.
+* Oversaw the operation and maintenance of five Google Search Appliances.
+* Collaborated with several teams in an Agile working environment.
 
 **Senior Frontend Web Developer - Creative Circle** (February 2013 - November 2013)
 
