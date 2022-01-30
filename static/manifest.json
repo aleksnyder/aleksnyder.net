@@ -1,10 +1,10 @@
 {
   "short_name": "aleksnyder.net",
   "name": "aleksnyder.net",
-  "description": "Alek Snyder is a Maryland based Web Developer who enjoys planning, wireframing, and building websites.",
+  "description": "Alek Snyder is a Web Developer and UI/UX Designer who specializes in designing and developing responsive websites from scratch.",
   "icons": [
     {
-      "src": "/user/themes/portfolio/build/img/logo_192x192.png",
+      "src": "/img/logo_192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }

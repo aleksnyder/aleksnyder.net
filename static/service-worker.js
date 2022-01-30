@@ -1,5 +1,5 @@
 self.addEventListener('install', event => {
-  var offlineURL = 'offline.html';
+  const offlineURL = '/offline.html';
   event.waitUntil(
     fetch(new Request(offlineURL)).then(response => {
       return caches.open('offline').then(cache => {
@@ -17,7 +17,7 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       fetch(request).catch(error => {
         return caches.open('offline').then(cache => {
-          return cache.match('offline.html');
+          return cache.match('/offline.html');
         });
       })
     );
