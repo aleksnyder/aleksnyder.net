@@ -62,3 +62,9 @@ copyButtons.forEach(copyButton => {
     messagePlaceholder.append(message);
   });
 });
+
+document.addEventListener("keypress", function(e) {
+  if ((e.ctrlKey || e.metaKey) && (e.key === 11 || e.key === 75)) {
+    console.log("ctrl+k coming soon!");
+  }
+});

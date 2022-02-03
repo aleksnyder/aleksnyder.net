@@ -12,6 +12,7 @@ projectUrl: https://web.archive.org/web/20141223183508/http://www.aaos.net/conte
 images:
   jpg: img/jekyll-cv.jpg
   webp: img/jekyll-cv.webp
+draft: true
 ---
 
 ## Project Overview

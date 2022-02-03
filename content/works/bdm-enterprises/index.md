@@ -3,7 +3,7 @@ title: BDM Enterprises
 description: Project page for BDM Enterprises, the first site I deployed on Github Pages.
 date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
-techs: [Jekyll, Ruby, YAML, SCSS]
+techs: [HTML, CSS]
 roles: [UX Designer, Developer]
 thumbnail:
   jpg: img/bdm-enterprises.jpg

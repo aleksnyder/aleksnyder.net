@@ -29,7 +29,7 @@
                 </picture>
                 <figcaption class="card__details">
                     <h3 class="card__title">{{ .Title }}</h3>
-                    <p>HTML, CSS, JS</p>
+                    <p>{{ delimit .Params.techs ", " }}</p>
                 </figcaption>
             </a>
         </figure>
