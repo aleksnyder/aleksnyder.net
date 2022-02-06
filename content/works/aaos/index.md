@@ -6,12 +6,12 @@ jobDate: 2019
 techs: [HTML, CSS, JS, WordPress]
 roles: [UX Designer, Developer]
 thumbnail:
-  jpg: img/aaos.jpg
-  webp: img/aaos.webp
+  jpg: /img/aaos.jpg
+  webp: /img/aaos.webp
 projectUrl: https://web.archive.org/web/20141223183508/http://www.aaos.net/content/
 images:
-  jpg: img/jekyll-cv.jpg
-  webp: img/jekyll-cv.webp
+  jpg: /img/jekyll-cv.jpg
+  webp: /img/jekyll-cv.webp
 draft: true
 ---
 

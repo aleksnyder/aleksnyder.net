@@ -70,7 +70,7 @@
 
   h3 {
     @include bp(desktop) {
-      font-size: var(--size-400);
+      font-size: var(--size-500);
     }
   }
 }

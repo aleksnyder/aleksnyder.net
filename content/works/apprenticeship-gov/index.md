@@ -6,12 +6,12 @@ jobDate: 2022
 techs: [Drupal, React, Node.js, Azure]
 roles: [UX Designer, Developer, Architect]
 thumbnail:
-  jpg: img/apprenticeship-gov.jpg
-  webp: img/apprenticeship-gov.webp
+  jpg: /img/apprenticeship-gov.jpg
+  webp: /img/apprenticeship-gov.webp
 projectUrl: https://www.apprenticeship.gov
 images:
-  jpg: img/apprenticeship-gov.jpg
-  webp: img/apprenticeship-gov.webp
+  jpg: /img/apprenticeship-gov.jpg
+  webp: /img/apprenticeship-gov.webp
 ---
 
 ## Project Overview

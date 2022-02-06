@@ -17,22 +17,24 @@
     </div>
     <div class="container-breakout callout">
         <div class="inner">
-            <section class="section works card-group" id="works">
+            <section class="section projects projects--alternate" id="works">
                 {{ $paginator := .Paginate (where .Pages "Type" "works") }}
                 {{ range $paginator.Pages }}
-                    <figure data-folio="{{ .Title }}" class="card">
-                        <a class="card__wrapper" href="{{ .Permalink }}">
-                            <picture class="card__img">
-                                <source type="image/webp" srcset="/{{ .Params.thumbnail.webp }}">
-                                <source type="image/jpeg" srcset="/{{ .Params.thumbnail.jpg }}">
-                                <img src="/{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}">
+                    <div class="project">
+                        <div class="project__content project__content--alternate">
+                            <h3 class="project__title">{{ .Title }}</h3>
+                            <p class="project__description project__description--alternate">{{ .Params.description }}</p>
+                            <p class="project__techs">{{ delimit .Params.techs ", " }}</p>
+                            <a class="project__link" href="{{ .Permalink }}" rel="noopener noreferrer">View project 🠒</a>
+                        </div>
+                        <div class="project__image">
+                            <picture>
+                                <source type="image/webp" srcset="{{ .Params.thumbnail.webp }}">
+                                <source type="image/jpeg" srcset="{{ .Params.thumbnail.jpg }}">
+                                <img src="{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}" width="621" height="417">
                             </picture>
-                            <figcaption class="card__details">
-                                <h3 class="card__title">{{ .Title }}</h3>
-                                <p>HTML, CSS, JS</p>
-                            </figcaption>
-                        </a>
-                    </figure>
+                        </div>
+                    </div>
                 {{ end }}
             </section>
         </div>

@@ -37,7 +37,122 @@
   }
 }
 
-.works {
+.projects {
   max-width: 72em;
   margin: 0 auto;
+}
+
+.project {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+
+  &:not(:last-of-type) {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    padding: 2.5rem 2.5rem 2rem;
+    background: rgba(0, 0, 12, 0.6);
+    box-shadow: rgba(0,0,0,0.4) 0px 2px 8px 0px;
+    grid-column: 1 / -1;
+    grid-area: 1 / 1 / -1 / -1;
+    z-index: 5;
+    height: 100%;
+    @include bp(tablet) {
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      grid-column: 1 / 9;
+      grid-area: 1 / 1 / -1 / 7;
+      z-index: 2;
+      height: auto;
+    }
+
+    &--alternate {
+      background: rgba(20, 20, 20, 0.6);
+
+      @include bp(tablet) {
+        background: transparent;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 1.25rem;
+    color: $primary-color;
+    font-size: var(--size-600);
+
+    @include bp(tablet) {
+      margin: 0 0 1rem;
+    }
+  }
+
+  &__techs {
+    margin: 0 0 0.5rem;
+    color: $primary-color;
+    font-size: var(--size-400);
+    font-weight: 600;
+  }
+
+  &__description {
+    margin: 0 0 1.25rem;
+
+    @include bp(tablet) {
+      padding: 2rem 1.5rem;
+      background: #00000c;
+      box-shadow: rgba(0,0,0,0.4) 0px 2px 8px 0px;
+      border-radius: 0.8rem;
+      margin: 0 0 0.5rem;
+    }
+
+    &--alternate {
+      @include bp(tablet) {
+        background: $bg-color-dark;
+      }
+    }
+  }
+
+  &__image {
+    box-shadow: 0 10px 30px -15px #020c1b;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-column: 1 / -1;
+    grid-area: 1 / 1 / -1 / -1;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    opacity: 0.25;
+    @include bp(tablet) {
+      grid-area: 1 / 6 / -1 / -1;
+      opacity: 1;
+    }
+
+    img,
+    picture {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &:nth-of-type(2n+1) {
+    .project__content {
+      @include bp(tablet) {
+        grid-column: 7 / -1;
+        text-align: right;
+      }
+    }
+
+    .project__image {
+      @include bp(tablet) {
+        grid-column: 1 / 8;
+      }
+    }
+  }
 }

@@ -1,17 +1,17 @@
 ---
 title: BDM Enterprises
-description: Project page for BDM Enterprises, the first site I deployed on Github Pages.
+description: Project page for BDM Enterprises. A static site built with plain ol' HTML, CSS, and a dash of JavaScript.
 date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
 techs: [HTML, CSS]
 roles: [UX Designer, Developer]
 thumbnail:
-  jpg: img/bdm-enterprises.jpg
-  webp: img/bdm-enterprises.webp
+  jpg: /img/bdm-enterprises.jpg
+  webp: /img/bdm-enterprises.webp
 projectUrl: http://www.bdmenterprisesllc.net/
 images:
-  jpg: img/jekyll-cv.jpg
-  webp: img/jekyll-cv.webp
+  jpg: /img/jekyll-cv.jpg
+  webp: /img/jekyll-cv.webp
 ---
 
 ## Project Overview

@@ -18,21 +18,23 @@
     {{ partial "components/intro.html" . }}
 
 <h2>Recent Work I've Done</h2>
-<section class="works card-group" id="works">
+<section class="projects" id="works">
     {{ range first 3 (where .Site.RegularPages "Type" "works")}}
-        <figure data-folio="{{ .Title }}" class="card">
-            <a class="card__wrapper" href="{{ .Permalink }}">
-                <picture class="card__img">
+        <div class="project">
+            <div class="project__content">
+                <h3 class="project__title">{{ .Title }}</h3>
+                <p class="project__description">{{ .Params.description }}</p>
+                <p class="project__techs">{{ delimit .Params.techs ", " }}</p>
+                <a class="project__link" href="{{ .Permalink }}" rel="noopener noreferrer">View project 🠒</a>
+            </div>
+            <div class="project__image">
+                <picture>
                     <source type="image/webp" srcset="{{ .Params.thumbnail.webp }}">
                     <source type="image/jpeg" srcset="{{ .Params.thumbnail.jpg }}">
-                    <img src="{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}">
+                    <img src="{{ .Params.thumbnail.jpg }}" alt="Preview Image for {{ .Title }}" width="621" height="417">
                 </picture>
-                <figcaption class="card__details">
-                    <h3 class="card__title">{{ .Title }}</h3>
-                    <p>{{ delimit .Params.techs ", " }}</p>
-                </figcaption>
-            </a>
-        </figure>
+            </div>
+        </div>
     {{ end }}
 </section>
 
