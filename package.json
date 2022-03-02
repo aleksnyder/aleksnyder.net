@@ -1,18 +1,22 @@
 {
-    "name": "aleksnyder",
-    "private": true,
-    "scripts": {
-      "start": "hugo server",
-      "build": "hugo --minify",
-      "server": "hugo server",
-      "webp": "find ./ -type f -name '*.jpg' | xargs -P 8 -I {} sh -c 'cwebp -q 75 $1 -o \"${1%.jpg}.webp\"' _ {} "
-    },
-    "dependencies": {
-      "autoprefixer": "^9.7.6",
-      "postcss-cli": "^7.1.1"
-    },
-    "browserlists": [
-      "ie 11",
-      "last 3 versions"
-    ]
+  "name": "aleksnyder",
+  "private": true,
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo --minify",
+    "server": "hugo server",
+    "webp": "find ./ -type f -name '*.jpg' | xargs -P 8 -I {} sh -c 'cwebp -q 75 $1 -o \"${1%.jpg}.webp\"' _ {} "
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.1"
+  },
+  "browserlists": [
+    "ie 11",
+    "last 3 versions"
+  ],
+  "devDependencies": {
+    "playwright": "^1.19.2",
+    "sharp": "^0.30.1"
   }
+}

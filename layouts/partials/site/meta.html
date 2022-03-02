@@ -16,15 +16,26 @@
 <!-- Open Graph Data -->
 <meta property="og:url" content="https://www.aleksnyder.net/">
 <meta property="og:type" content="article" />
-<meta property="og:title" content="{{ .Title }} | aleksnyder.net">
+<meta property="og:title" content="{{ .Title }}">
 {{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
 <meta property="og:site_name" content="aleksnyder.net" />
-<meta property="og:image" content="https://www.aleksnyder.net/img/social.jpg">
+
+{{ if .Params.socialShareImage }}
+  <meta property="og:image" content="{{ .Params.socialShareImage }}">
+{{ else }}
+  <meta property="og:image" content="https://www.aleksnyder.net/img/social.jpg">
+{{ end }}
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ .Title }} | aleksnyder.net">
+<meta name="twitter:title" content="{{ .Title }}">
 {{ with .Description }}<meta property="twitter:description" content="{{ . }}">{{ end }}
-<meta name="twitter:image" content="https://www.aleksnyder.net/img/social.jpg">
+
+{{ if .Params.socialShareImage }}
+  <meta name="twitter:image" content="{{ .Params.socialShareImage }}">
+{{ else }}
+  <meta name="twitter:image" content="https://www.aleksnyder.net/img/social.jpg">
+{{ end }}
+
 <meta name="twitter:creator" content="@aleksnyder">
 <meta name="twitter:site" content="@aleksnyder">
 

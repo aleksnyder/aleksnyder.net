@@ -7,6 +7,7 @@ tags:
 - git
 - wsl
 date: 2017-02-26
+socialShareImage: "https://www.aleksnyder.net/img/social-images/run-commands-at-startup-in-wsl.png"
 publishdate: 2017-02-26
 ---
 

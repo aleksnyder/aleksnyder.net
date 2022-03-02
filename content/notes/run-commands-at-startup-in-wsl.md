@@ -6,6 +6,7 @@ tags:
   - Quick Tip
   - WSL
 date: 2022-01-24
+socialShareImage: "https://www.aleksnyder.net/img/social-images/run-commands-at-startup-in-wsl.png"
 publishdate: 2022-01-24
 ---
 
