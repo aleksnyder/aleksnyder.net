@@ -77,12 +77,7 @@ Company-minded team player…results oriented…efficient, professional, web des
 * Publication on the Internet: Programming Option Certificate
 * Web Design Certificate
 
+**Comptia Security+ Certificate**
+
 ## References
-**Rob Ellis**, Solutions Architect
-Acquia,  Maryland,  [(410) 775-6408](tel:410-775-6408)
-
-**Trevor Johnson**, Web Services Team Lead
-USAID,  Virginia,  [(703) 666-1371](tel:703-666-1371)
-
-**Michele Cox Spivey**, Administrator
-AAOS, Maryland, [(443) 517-8393](tel:443-517-8393)
+References available upon request
