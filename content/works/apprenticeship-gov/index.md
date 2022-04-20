@@ -6,12 +6,12 @@ jobDate: 2022
 techs: [Drupal, React, Node.js, Azure]
 roles: [UX Designer, Developer, Architect]
 thumbnail:
-  jpg: /img/apprenticeship-gov.jpg
-  webp: /img/apprenticeship-gov.webp
+  jpg: /img/projects/apprenticeship.jpg
+  webp: /img/projects/apprenticeship.webp
 projectUrl: https://www.apprenticeship.gov
 images:
-  jpg: /img/apprenticeship-gov.jpg
-  webp: /img/apprenticeship-gov.webp
+  jpg: /img/projects/apprenticeship.jpg
+  webp: /img/projects/apprenticeship.webp
 ---
 
 ## Project Overview
@@ -19,7 +19,7 @@ Apprenticeship.gov is the Department of Labor's one-stop place for all things ap
 looking for new opportunities, employers searching for how to register their apprenticeship program, the media looking for information about 
 policies or downloadable resources, or educators pointing out to students the benefits of apprenticeship.
 
-{{< screenshot src="apprenticeship-gov.jpg" alt="Apprenticeship.gov homepage in a browser" >}}
+{{< screenshot src="apprenticeship.jpg" alt="Apprenticeship.gov homepage in a browser" >}}
 
 ## Responsibilities
 During the development of apprenticeship.gov, I was involved in many of the architecture discussions deciding how to build out a
