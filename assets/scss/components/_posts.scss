@@ -152,3 +152,14 @@
     margin: 0 0.5rem 0.75rem 0;
   }
 }
+
+.toc {
+  a:hover,
+  a:focus {
+    color: $yellow;
+  }
+  
+  > .toc {
+    padding-left: 1rem;
+  }
+}

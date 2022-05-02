@@ -35,7 +35,7 @@ if (tableOfContents) {
     });
   
     // Track all sections that have an `id` applied
-    document.querySelectorAll('h2[id]').forEach((section) => {
+    document.querySelectorAll('h2[id], h3[id]').forEach((section) => {
       observer.observe(section);
     });
   });
