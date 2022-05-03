@@ -9,7 +9,7 @@ description: "A web-friendly version of Alek Snyder's resume."
 I am a hardworking and passionate web developer, constantly looking to better myself and provide
 everything I can to an equally dedicated team of developers.
 
-I have over five years of professional web development experience, with knowledge of front-end and
+I have around a decade of professional web development experience, with knowledge of front-end and
 back-end development.
 
 
@@ -31,16 +31,15 @@ back-end development.
 
 **Lead Engineer - Booz Allen Hamilton.** (March 2015 - Present)
 
-Full-stack developer responsible for end-to-end web development and enhancing the client’s user
-experience.
+Full-stack developer responsible for end-to-end web development and architecting solutions to problems faced by clients.
 
 * Proposed software solutions which lead to a multimillion-dollar contract.
 * Collaborated with multiple teams to implement a widely used development platform.
-* Developed microservices to integrate with Azure services and send data to front-end tools like
-React.
+* Planned and built a personalization service using Azure and Kubernetes to serve tailored results to hundreds of thousands of users based on previously visited items and their location.
 * Built programming tools and custom software to reduce development time.
 * Led client efforts to integrate with third-party services such as login.gov.
-* Served as technical lead for a team of developers on high-profile client projects.
+* Served as technical lead for a team of developers responsible for creating an application to search over 100,000 programs across the country.
+* Engineered a solution to migrate key information from hundreds of policy documents over the last half century into Drupal.
 
 **Web Developer - Arbola Inc.** (February 2013 - March 2015)
 

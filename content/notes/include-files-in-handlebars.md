@@ -6,6 +6,7 @@ toc: true
 tags:
   - JavaScript
   - Handlebars
+socialShareImage: https://www.aleksnyder.net/img/social-images/include-files-in-handlebars.png
 date: 2022-05-02
 publishdate: 2022-05-02
 ---
