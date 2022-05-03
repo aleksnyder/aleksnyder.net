@@ -35,15 +35,15 @@ First, we needed to let KSS Node to look for the new helper.  Every builder has 
   "mask"         : "*.scss",
   "placeholder"  : "[modifier]",
 
-"//": "relative to this file.",
+  "//": "relative to this file.",
   "builder"      : "kss_styleguide/custom-template/",
   "source"       : "src/",
   "destination"  : "kss_styleguide/styleguide/",
 
-"//": "relative to source.",
+  "//": "relative to source.",
   "homepage"     : "../kss_styleguide/kss-homepage.md",
 
-"//": "relative to the generated style guide.",
+  "//": "relative to the generated style guide.",
   "css": [],
   "js" : []
 }
