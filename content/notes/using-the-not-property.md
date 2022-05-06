@@ -5,6 +5,7 @@ excerpt: When building a site, a designer or developer usually runs into a situa
 tags:
 - css
 - sass
+socialShareImage: https://www.aleksnyder.net/img/social-images/using-the-not-property.png
 date: 2017-06-25
 publishdate: 2017-06-25
 ---

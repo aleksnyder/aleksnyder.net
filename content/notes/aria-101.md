@@ -6,7 +6,7 @@ excerpt: When developing websites, it's very important to keep accessibility in 
 tags:
   - aria
   - accessibility
-category_link: Quick Tip
+socialShareImage: https://www.aleksnyder.net/img/social-images/aria-101.png
 date: 2016-03-15
 publishdate: 2016-03-15
 ---

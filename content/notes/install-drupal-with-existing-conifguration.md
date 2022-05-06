@@ -6,6 +6,7 @@ tags:
   - TIL
   - Drupal
   - Quick Tip
+socialShareImage: https://www.aleksnyder.net/img/social-images/install-drupal-with-existing-configuration.png
 date: 2021-08-20
 publishdate: 2021-08-20
 ---

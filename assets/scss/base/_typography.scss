@@ -34,6 +34,12 @@ p {
   margin: 0 0 1.5rem;
 }
 
+ul, ol {
+  li {
+    font-size: var(--size-500);
+  }
+}
+
 time {
   font-size: var(--size-400);
 }

@@ -154,6 +154,10 @@
 }
 
 .toc {
+  li {
+    font-size: var(--size-400);
+  }
+
   a:hover,
   a:focus {
     color: $yellow;

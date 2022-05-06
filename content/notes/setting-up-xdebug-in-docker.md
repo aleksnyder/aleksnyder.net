@@ -5,6 +5,7 @@ excerpt: In this article, we'll explore how to integrate Xdebug into Docker and 
 tags:
   - xdebug
   - docker
+socialShareImage: https://www.aleksnyder.net/img/social-images/setting-up-xdebug-in-docker.png
 publishdate: 2019-10-15
 date: 2019-10-15
 ---

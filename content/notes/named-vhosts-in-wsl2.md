@@ -5,6 +5,7 @@ tags:
 - local development
 - wsl
 - nginx
+socialShareImage: https://www.aleksnyder.net/img/social-images/named-vhosts-in-wsl2.png
 date: 2021-01-01
 publishdate: 2021-01-01
 ---

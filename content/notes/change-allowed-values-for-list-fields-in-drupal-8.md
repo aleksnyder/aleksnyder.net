@@ -6,6 +6,7 @@ tags:
   - TIL
   - Drupal
   - Quick Tip
+socialShareImage: https://www.aleksnyder.net/img/social-images/change-allowed-values-for-list-fields-in-drupal-8.png
 date: 2021-08-17
 publishdate: 2021-08-17
 ---
