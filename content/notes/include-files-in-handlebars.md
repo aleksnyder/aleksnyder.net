@@ -100,6 +100,10 @@ module.exports = function (Handlebars) {
   "use strict";
 
   Handlebars.registerHelper("includes", function(filename) {
+    if (typeof filename !== 'undefined') {
+      return;
+    }
+
     const cwd = process.cwd();
     const url = `${cwd}/kss_styleguide/${filename}`;
     const includedFiles = fs.readFileSync(url, "utf8");
