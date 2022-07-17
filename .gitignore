@@ -4,6 +4,7 @@
 # Theme Specific
 node_modules/*
 public/*
+/resources/
 
 # OS Generated
 .DS_Store*
