@@ -6,13 +6,6 @@ html_class: resume
 description: "A web-friendly version of Alek Snyder's resume."
 ---
 
-I am a hardworking and passionate web developer, constantly looking to better myself and provide
-everything I can to an equally dedicated team of developers.
-
-I have around a decade of professional web development experience, with knowledge of front-end and
-back-end development.
-
-
 ## Professional Strengths
 
 **Web Technologies**
@@ -29,7 +22,16 @@ back-end development.
 
 ## Work Experience
 
-**Lead Engineer - Booz Allen Hamilton.** (March 2015 - Present)
+**Sr. Web Developer - Elastic** (July 2022 - Present)
+
+Full-stack developer responsible for enhancing and maintaining elastic.co.
+
+* Automated workflows to improve handling of tedious tasks, such as checking API token validity.
+* Improved developer experience by introducing pull requests, coding standards, and vault.
+* Coordinated with multiple teams to build out new features and improvements for elastic.co.
+* Enhanced the user experience by reliably incorporating third party services into the site.
+
+**Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
 
 Full-stack developer responsible for end-to-end web development and architecting solutions to problems faced by clients.
 
