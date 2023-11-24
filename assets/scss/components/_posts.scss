@@ -167,3 +167,33 @@
     padding-left: 1rem;
   }
 }
+
+.discuss {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-notes {
+  background-color: #ddd;
+  color: #00000c;
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.25s ease-in-out;
+  transition-property: border, background-color, color;
+
+  &:link,
+  &:visited {
+    color: #00000c; 
+  }
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #ddd;
+  }
+}
