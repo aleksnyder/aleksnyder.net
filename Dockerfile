@@ -1,0 +1,26 @@
+
+FROM node:20 AS build
+
+RUN npm install -g yarn
+
+ENV HUGO_VERSION="0.120.4"
+
+RUN set -ex \
+  && curl -fsSLO --compressed "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" \
+  && curl -fsSLO --compressed "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_checksums.txt" \
+  && grep " hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz\$" hugo_extended_${HUGO_VERSION}_checksums.txt | sha256sum -c - \
+  && tar -xzf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz -C /usr/local/bin/ \
+  && rm hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz \
+  && rm hugo_extended_${HUGO_VERSION}_checksums.txt \
+  && hugo version
+
+# We add git to the build stage, because Hugo needs it with --enableGitInfo
+RUN apk add --no-cache git
+
+RUN hugo --minify --enableGitInfo
+
+FROM alpine:3.10
+
+WORKDIR /usr/share/nginx/html/
+
+COPY --from=build /public /usr/share/nginx/html
