@@ -1,6 +1,7 @@
 const menuIcon = document.querySelector(".menu > button");
 const tableOfContents = document.querySelector(".table-of-contents");
-copyButtons = document.querySelectorAll(".code-block__button");
+const copyButtons = document.querySelectorAll(".code-block__button");
+const printButton = document.querySelector(".btn--print");
 
 menuIcon.addEventListener('click', function() {
   document.querySelector(".menu").classList.toggle("open");
@@ -68,3 +69,10 @@ document.addEventListener("keypress", function(e) {
     console.log("ctrl+k coming soon!");
   }
 });
+
+if (printButton) {
+  printButton.addEventListener("click", (e) => {
+    const resumeFilename = window.open("/files/alek_snyder_resume.pdf");
+    resumeFilename.print();
+  })
+}

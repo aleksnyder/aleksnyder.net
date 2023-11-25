@@ -9,15 +9,15 @@ description: "A web-friendly version of Alek Snyder's resume."
 ## Professional Strengths
 
 **Web Technologies**
-* Jekyll, WordPress, Drupal, Hugo, Grav
-* Jenkins, Unit Testing, Docker, Kubernetes
-* Node.js (Grunt, Gulp, Puppeteer, NPM Scripts, Microservices)
+* Jekyll, WordPress, Drupal, Hugo, Grav, Contentstack
+* Jenkins, Unit Testing, Docker, Kubernetes, GitHub Actions
+* Node.js (Vite, Gulp, Webpack, Puppeteer, NPM Scripts, Microservices)
 
 **Programming Language Experience**
-* CSS (Sass, Less, PostCSS, Bootstrap, Foundation)
-* Javascript (React, AngularJS, VueJS)
-* MySQL, PostgreSQL, MariaDB
-* Python, Go
+* CSS (Sass, Less, PostCSS, Tailwind, Selectors Level 4)
+* Javascript (React, AngularJS, VueJS, NextJS)
+* MySQL, PostgreSQL, MariaDB, Elastic Search, CosmosDB
+* Python, Go, BASH
 * PHP (Symfony, Laravel, Composer)
 
 ## Work Experience
@@ -26,10 +26,14 @@ description: "A web-friendly version of Alek Snyder's resume."
 
 Full-stack developer responsible for enhancing and maintaining elastic.co.
 
-* Automated workflows to improve handling of tedious tasks, such as checking API token validity.
-* Improved developer experience by introducing pull requests, coding standards, and vault.
+* Re-engineered the search experience on elastic.co to deliver context-driven results enhanced
+by AI.
+* Developed a script to migrate over 2,000 Jira tickets, all comments in those tickets, and all
+referenced assets from those tickets into GitHub.
+* Architected and implemented an application framework for introducing potential customers to
+Elastic pricing structures and the features available in each tier and solution.
+* Improved developer experience by introducing pull requests, coding standards, and Vault.
 * Coordinated with multiple teams to build out new features and improvements for elastic.co.
-* Enhanced the user experience by reliably incorporating third party services into the site.
 
 **Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
 
@@ -61,7 +65,7 @@ Motivated Web Developer tasked with finishing up several projects for PCI commun
 * Provided consultation services for numerous PCI projects.
 * Created websites using Joomla, WordPress, static HTML, and PCI's custom-built CMS.
 * Worked onsite and remotely to ensure PCI met their client's deadlines.
-* Clients include [FDIC](https://www.aleksnyder.net/works/fdic-ms-podcast/ "Go to the project page for FDIC MS Podcast"), [Coast Guard](http://www.uscgboating.org/ "Go to U.S. Coast Guard Boating Safety website"), [CropLife America](https://www.aleksnyder.net/works/croplife-america/ "Go to the project page for CropLife America"), [Force3](http://cloudfirst.force3.com/ "Go to Force3's website"), and [PCI Communications](http://www.pcicom.com/ "Go to PCI Communication's website").
+* Clients include FDIC, Coast Guard, CropLife America, Force3, PCI Communications.
 
 **Junior Web Developer - BOSS Group** (May 2012 - February 2013)
 

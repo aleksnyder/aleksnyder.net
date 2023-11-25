@@ -4,15 +4,15 @@
 
     {{ $resume := os.Stat "/static/files/alek_snyder_resume.pdf" }}
     <div class="resume__controls">
-      <a href="/files/alek_snyder_resume.pdf">Download ({{ substr $resume.Size 0 2}} KB)</a>
-      <a href="#" onClick="window.print()">Print</a>
+      <a class="btn" download="alek_snyder_resume.pdf" href="/files/alek_snyder_resume.pdf">Download ({{ substr $resume.Size 0 2}} KB)</a>
+      <button class="btn btn--print" type="button">Print</button>
     </div>
 
     <div class="section--sm">
       <h1>Alek Snyder</h1>
 
       <div class="contact-information">
-        <a href="mailto:asnyder0816@gmail.com">asnyder0816@gmail.com</a>
+        <a href="mailto:alek.c.snyder@gmail.com">alek.c.snyder@gmail.com</a>
         <a href="https://www.aleksnyder.net" title="Go to aleksnyder.net">https://www.aleksnyder.net</a>
       </div>
 

@@ -16,10 +16,16 @@
   .contact-info {
     margin-bottom: 0;
   }
+
   ul,
+  li,
   p {
     font-size: var(--size-400);
     margin: 0;
+  }
+
+  strong {
+    font-size: var(--size-500);
   }
 
   ul + p {

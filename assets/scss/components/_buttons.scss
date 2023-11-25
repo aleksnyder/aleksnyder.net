@@ -1,0 +1,23 @@
+.btn {
+  cursor: pointer;
+  background-color: #ddd;
+  color: #00000c;
+  border-radius: 3px;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.25s ease-in-out;
+  transition-property: border, background-color, color;
+
+  &:link,
+  &:visited {
+    color: #00000c; 
+  }
+
+  &:focus-visible,
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #ddd;
+  }
+}
