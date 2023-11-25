@@ -1,4 +1,4 @@
-{{ $style := resources.Get "scss/main.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
-{{ $printStyle := resources.Get "scss/print.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS (dict "outputStyle" "compressed") | postCSS (dict "config" "postcss.config.js") | fingerprint }}
+{{ $printStyle := resources.Get "scss/print.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 <link rel="stylesheet" media="print" href="{{ $printStyle.Permalink }}">
