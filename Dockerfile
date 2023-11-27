@@ -1,8 +1,6 @@
 
 FROM node:20 AS build
 
-RUN npm install -g yarn
-
 ENV HUGO_VERSION="0.120.4"
 
 RUN set -ex \
