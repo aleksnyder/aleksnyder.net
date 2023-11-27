@@ -1,6 +1,8 @@
 
 FROM node:20 AS build
 
+WORKDIR /app
+
 ENV HUGO_VERSION="0.120.4"
 
 RUN set -ex \
@@ -12,7 +14,7 @@ RUN set -ex \
   && rm hugo_${HUGO_VERSION}_checksums.txt \
   && hugo version
 
-COPY . .
+COPY . /app
 
 RUN ls -al
 
@@ -22,4 +24,6 @@ FROM alpine:3.10
 
 WORKDIR /usr/share/nginx/html/
 
-COPY --from=build /public /usr/share/nginx/html
+COPY --from=build /app /usr/share/nginx/html
+
+RUN ls -al /usr/share/nginx/html
