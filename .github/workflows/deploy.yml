@@ -25,6 +25,9 @@ jobs:
         run: |
           docker build . --tag ghcr.io/aleksnyder/ci:latest
           docker push ghcr.io/aleksnyder/ci:latest
+      - name: 'Test'
+        run: |
+          ls -al
   #runs-on: ubuntu-latest
   
   #steps:
