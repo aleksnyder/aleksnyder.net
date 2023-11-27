@@ -16,6 +16,8 @@ RUN set -ex \
 
 COPY . /app
 
+RUN yarn install --frozen-lockfile
+
 RUN ls -al
 
 RUN hugo --minify --enableGitInfo
