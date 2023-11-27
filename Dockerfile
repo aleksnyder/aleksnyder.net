@@ -12,6 +12,10 @@ RUN set -ex \
   && rm hugo_${HUGO_VERSION}_checksums.txt \
   && hugo version
 
+COPY . .
+
+RUN ls -al
+
 RUN hugo --minify --enableGitInfo
 
 FROM alpine:3.10
