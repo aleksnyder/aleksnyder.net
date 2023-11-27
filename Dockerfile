@@ -12,9 +12,6 @@ RUN set -ex \
   && rm hugo_${HUGO_VERSION}_checksums.txt \
   && hugo version
 
-# We add git to the build stage, because Hugo needs it with --enableGitInfo
-RUN apk add --no-cache git
-
 RUN hugo --minify --enableGitInfo
 
 FROM alpine:3.10
