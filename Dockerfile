@@ -17,13 +17,3 @@ RUN set -ex \
 COPY . /app
 
 RUN yarn install --frozen-lockfile
-
-RUN hugo --minify --enableGitInfo
-
-FROM alpine:3.10
-
-WORKDIR /usr/share/nginx/html/
-
-COPY --from=build /app /usr/share/nginx/html
-
-RUN ls -al /usr/share/nginx/html
