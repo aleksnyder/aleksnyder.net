@@ -34,6 +34,11 @@ jobs:
           hugo \
             --gc \
             --minify
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: See files
         run: |
           ls -al
