@@ -3,32 +3,38 @@ on:
   push:
     branches:
       - ci/deploy-docker-action
+  workflow_dispatch:
   
 jobs:
-  push-store-image:
+  # Build job
+  build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: './'
+    env:
+      HUGO_VERSION: 0.120.4
     steps:
-      - name: 'Checkout GitHub Action'
-        uses: actions/checkout@main
-
-      - name: 'Login to GitHub Container Registry'
-        uses: docker/login-action@v1
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          registry: ghcr.io
-          username: ${{github.actor}}
-          password: ${{secrets.DOCKER_TOKEN}}
-
-      - name: 'Build Inventory Image'
+          submodules: recursive
+          fetch-depth: 0
+      - name: Install Node.js dependencies
+        run: "[[ -f yarn.lock ]] && yarn install --frozen-lockfile || true"
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: |
-          docker build . --tag ghcr.io/aleksnyder/ci:latest
-          docker push ghcr.io/aleksnyder/ci:latest
-      - name: 'Compile hugo'
-        run: |
-          hugo --minify --enableGitInfo
-      - name: 'List files'
+          hugo \
+            --gc \
+            --minify
+      - name: See files
         run: |
           ls -al
   #runs-on: ubuntu-latest
