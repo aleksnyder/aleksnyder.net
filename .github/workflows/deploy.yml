@@ -2,9 +2,10 @@ name: deploy aleksnyder.net
 on:
   push:
     branches:
-      - main
+    - main
   pull_request:
-      - main
+    branches:
+    - main
   workflow_dispatch:
   
 jobs:
