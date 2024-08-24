@@ -1,0 +1,31 @@
+{{ $left := $.Page.Resources.GetMatch (print (.Get "left")) }}
+{{ $right := $.Page.Resources.GetMatch (print (.Get "right")) }}
+
+<section class="screenshots container-breakout">
+    <div class="screenshot screenshot--first">
+        <img
+            class="screenshot__img"
+            sizes='(min-width: 35em) 1200px, 100vw'
+            srcset='
+                {{ ($left.Resize "800x").RelPermalink }} 800w,
+                {{ ($left.Resize "1200x").RelPermalink }} 1200w,
+                {{ ($left.Resize "1920x").RelPermalink }} 1920w'
+            src='{{ ($left.Resize "1200x").RelPermalink }}'
+            loading='lazy'
+            alt='{{ with .Get `alt`}}{{ . }}{{ end }}'
+        />
+    </div>
+    <div class="screenshot screenshot--last">
+        <img
+            class="screenshot__img"
+            sizes='(min-width: 35em) 1200px, 100vw'
+            srcset='
+                {{ ($right.Resize "800x").RelPermalink }} 800w,
+                {{ ($right.Resize "1200x").RelPermalink }} 1200w,
+                {{ ($right.Resize "1920x").RelPermalink }} 1920w'
+            src='{{ ($right.Resize "1200x").RelPermalink }}'
+            loading='lazy'
+            alt='{{ with .Get `alt`}}{{ . }}{{ end }}'
+        />
+    </div>
+</section>

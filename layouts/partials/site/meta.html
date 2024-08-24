@@ -6,22 +6,30 @@
 
 <!-- Chrome, Firefox OS and Opera -->
 <meta name="theme-color" content="#19a69a">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#19a69a">
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#19a69a">
 
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+<meta name="author" content="Alek Snyder" />
+
+{{ if .Params.publishdate }}
+  <meta property="article:published_time" content="{{ .Params.publishdate }}T00:00:00+00:00" />
+	<meta property="article:modified_time" content="{{ .Params.publishdate }}T00:00:00+00:00" />
+{{ end }}
 
 <!-- Open Graph Data -->
-<meta property="og:url" content="https://www.aleksnyder.net/">
+<meta property="og:url" content="https://www.aleksnyder.net{{ .Permalink }}">
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ .Title }}">
 {{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:locale" content="en_US" />
 <meta property="og:site_name" content="aleksnyder.net" />
 
 {{ if .Params.socialShareImage }}
   <meta property="og:image" content="{{ .Params.socialShareImage }}">
+  <meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:type" content="image/png" />
 {{ else }}
   <meta property="og:image" content="https://www.aleksnyder.net/img/social.jpg">
 {{ end }}
@@ -36,9 +44,6 @@
   <meta name="twitter:image" content="https://www.aleksnyder.net/img/social.jpg">
 {{ end }}
 
-<meta name="twitter:creator" content="@aleksnyder">
-<meta name="twitter:site" content="@aleksnyder">
-
 <link rel="shortcut icon" type="image/x-icon" href="/img/favicons/favicon.ico" />
-<link rel="canonical" href="https://www.aleksnyder.net" />
+<link rel="canonical" href="https://www.aleksnyder.net{{ .Permalink }}" />
 <link rel="manifest" href="/manifest.json">

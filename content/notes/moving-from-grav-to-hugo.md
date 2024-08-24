@@ -110,6 +110,6 @@ A lot of work went into this redesign but there's always something new to try.  
 * Generate screenshots from a script
 * ~~Use CSS clamp() for font sizes~~
 * Use CSS variables over SASS variables
-* Write some case stuides on previous projects
+* Write some case studies on previous projects
 * Add some micro-animations
 * Add share links using the Social Share API

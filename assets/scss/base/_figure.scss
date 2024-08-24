@@ -1,8 +1,7 @@
 .project {
     &__screenshot {
-        background: linear-gradient(to right, #2b5876, #4e4376);
         .device-container {
-        max-width: 600px;
+          max-width: 600px;
         }
     }
 }
@@ -77,7 +76,6 @@
   }
 
   .browser-mockup {
-    -webkit-box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
     box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
     position: relative;
   }
@@ -86,11 +84,8 @@
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background: -webkit-gradient(linear,left top,left bottom,from(#e1e1e1),to(#d1d1d1));
     background: linear-gradient(#e1e1e1,#d1d1d1);
     background-color: #e8e8ea;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 20px;
     padding-left: 10px
@@ -116,7 +111,7 @@
   }
 
   .project__screenshot {
-    padding: 4em 2em;
+    margin: 0 0 3rem;
     .browser-mockup {
       width: 100%;
       height: auto;
