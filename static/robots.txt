@@ -1,0 +1,221 @@
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Ai2Bot-Dolma
+Disallow: /
+
+User-agent: Alexa Crawler
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: BaiduLink
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: BlexBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CocoonBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: CommonCrawler
+Disallow: /
+
+User-agent: DatanyzeBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: EzoomsBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: Favicon Checker
+Disallow: /
+
+User-agent: FriendlyCrawler
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: iaskspider/2.0
+Disallow: /
+
+User-agent: ICC-Crawler
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+User-agent: LinkedInBot
+Disallow: /
+
+User-agent: Mail.RU Bot
+Disallow: /
+
+User-agent: Majestic-12
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: MegauploadBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: NetcraftSurveyAgent
+Disallow: /
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: OpenAI GPTBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Pinterestbot
+Disallow: /
+
+User-agent: QuoraBot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Slackbot
+Disallow: /
+
+User-agent: Slackbot-LinkExpanding
+Disallow: /
+
+User-agent: Sogou Spider
+Disallow: /
+
+User-agent: Spider
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: TumblrBot
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: UnknownBot
+Disallow: /
+
+User-agent: VelenPublicWebCrawler
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: WhatsAppBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Yeti
+Disallow: /
+
+User-agent: You.com Bot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: ZoominfoBot
+Disallow: /
