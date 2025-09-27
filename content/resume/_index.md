@@ -9,13 +9,13 @@ description: "A web-friendly version of Alek Snyder's resume."
 ## Professional Strengths
 
 **Web Technologies**
-* Jekyll, WordPress, Drupal, Hugo, Grav, Contentstack
-* Jenkins, Unit Testing, Docker, Kubernetes, GitHub Actions
+* Jekyll, WordPress, Drupal, Hugo, Grav, Contentstack, Sanity
+* Jenkins, Docker, Kubernetes, GitHub Actions, Terraform, AWS, ELK
 * Node.js (Vite, Gulp, Webpack, Puppeteer, NPM Scripts, Microservices)
 
 **Programming Language Experience**
 * CSS (Sass, Less, PostCSS, Tailwind, Selectors Level 4)
-* Javascript (React, AngularJS, VueJS, NextJS)
+* Javascript (React, AngularJS, VueJS, NextJS, Svelte)
 * MySQL, PostgreSQL, MariaDB, Elastic Search, CosmosDB
 * Python, Go, BASH
 * PHP (Symfony, Laravel, Composer)
@@ -26,13 +26,10 @@ description: "A web-friendly version of Alek Snyder's resume."
 
 Full-stack developer responsible for enhancing and maintaining elastic.co.
 
-* Re-engineered the search experience on elastic.co to deliver context-driven results enhanced
-by AI.
-* Developed a script to migrate over 2,000 Jira tickets, all comments in those tickets, and all
-referenced assets from those tickets into GitHub.
-* Architected and implemented an application framework for introducing potential customers to
-Elastic pricing structures and the features available in each tier and solution.
-* Improved developer experience by introducing pull requests, coding standards, and Vault.
+* Planned and developed an ETL (Extract, Transform, Load) tool to migrate over 120,000 items from Contentstack to Sanity.
+* Re-engineered the search experience on elastic.co to deliver context-driven results enhanced by AI.
+* Overhauled and standardized the elastic.co website architecture to use Blue/Green deployments in AWS and transitioned all supporting architecture to use Terraform.
+* Architected and implemented an application framework for introducing potential customers to Elastic pricing structures and the features available in each tier and solution.
 * Coordinated with multiple teams to build out new features and improvements for elastic.co.
 
 **Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
