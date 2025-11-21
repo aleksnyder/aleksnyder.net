@@ -15,8 +15,8 @@ description: "A web-friendly version of Alek Snyder's resume."
 
 **Programming Language Experience**
 * CSS (Sass, Less, PostCSS, Tailwind, Selectors Level 4)
-* Javascript (React, AngularJS, VueJS, NextJS, Svelte)
-* MySQL, PostgreSQL, MariaDB, Elastic Search, CosmosDB
+* Javascript (React, Angular, Vue.js, Next.js, Svelte)
+* MySQL, PostgreSQL, MariaDB, Elasticsearch, CosmosDB
 * Python, Go, BASH
 * PHP (Symfony, Laravel, Composer)
 
@@ -26,11 +26,11 @@ description: "A web-friendly version of Alek Snyder's resume."
 
 Full-stack developer responsible for enhancing and maintaining elastic.co.
 
-* Planned and developed an ETL (Extract, Transform, Load) tool to migrate over 120,000 items from Contentstack to Sanity.
-* Re-engineered the search experience on elastic.co to deliver context-driven results enhanced by AI.
-* Overhauled and standardized the elastic.co website architecture to use Blue/Green deployments in AWS and transitioned all supporting architecture to use Terraform.
+* Built an ETL tool for migrating over 120,000 items between content management systems.
+* Re-engineered the search experience on elastic.co to deliver context-driven results enhanced by machine learning and RAG.
+* Overhauled and standardized the elastic.co website architecture to use Blue/Green deployments in AWS and transitioned supporting architecture to Terraform.
 * Architected and implemented an application framework for introducing potential customers to Elastic pricing structures and the features available in each tier and solution.
-* Coordinated with multiple teams to build out new features and improvements for elastic.co.
+* Introduced modern development practices to enhance accountability, quality, and standards.
 
 **Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
 
