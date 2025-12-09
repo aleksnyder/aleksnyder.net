@@ -11,7 +11,7 @@ $bg-color-dark-accent: #101010;
 $bg-light: #EAEAEA;
 
 // Text variables
-$base-font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", helvetica neue, Ubuntu, Roboto, Noto, helvetica neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 $heading-font-family: $base-font-family;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -19,6 +19,8 @@ $base-line-height: 1.5;
 
 $text-color:       #676767;
 $text-color-light: #f4f4f4;
+$text-color-dark: #A1A1AA;
+$heading-color-light: #f4f4f4;
 $background-color: #fdfdfd;
 $brand-color:      #004094;
 

@@ -63,6 +63,7 @@
     font-size: 1em;
     grid-column: span 12;
     text-align: center;
+    color: $text-color-light;
     @include bp(desktop) {
       grid-column: span 6;
       text-align: left;

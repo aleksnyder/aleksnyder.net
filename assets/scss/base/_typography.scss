@@ -8,9 +8,10 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   margin: 4rem 0 2rem 0;
+  color: $heading-color-light;
 }
 
 h2 {
@@ -32,6 +33,15 @@ p {
   font-size: var(--size-500);
   line-height: 1.5;
   margin: 0 0 1.5rem;
+  color: $text-color-dark;
+}
+
+strong {
+  color: $text-color-light;
+}
+
+time {
+  color: $text-color-dark;
 }
 
 ul, ol {
