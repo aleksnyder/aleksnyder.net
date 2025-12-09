@@ -81,11 +81,8 @@
   }
 
   .browser-mockup__header {
-    -ms-flex-align: center;
-    -webkit-box-align: center;
     align-items: center;
-    background: linear-gradient(#e1e1e1,#d1d1d1);
-    background-color: #e8e8ea;
+    background: #e8e8ea linear-gradient(#e1e1e1, #d1d1d1);
     display: flex;
     height: 20px;
     padding-left: 10px

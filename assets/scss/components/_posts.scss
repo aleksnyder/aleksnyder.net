@@ -41,30 +41,19 @@
   h3 {
     margin-top: 0;
   }
-  @include bp(ie) {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
 }
 
 .post__nav {
   display: grid;
-  display: -ms-grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 1fr;
   padding: 0;
-  @include bp(ie) {
-    margin-bottom: 5em;
-  }
   a {
     display: block;
     color: darken( $primary-color, 10% );
     text-align: center;
     padding: 1.5em;
-    -webkit-transition: all .3s cubic-bezier(.455,.03,.515,.955);
-    -transition: all .3s cubic-bezier(.455,.03,.515,.955);
+    transition: all .3s cubic-bezier(.455,.03,.515,.955);
     &:before {
       display: block;
       color: #A4A4A4;
@@ -92,8 +81,6 @@
 .post__prev {
   grid-column: span 12;
   padding: 0;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   @include bp(large-phone) {
     grid-column: span 6;
   }
@@ -110,8 +97,6 @@
 .post__next {
   grid-column: span 12;
   padding: 0;
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 1;
   @include bp(large-phone) {
     grid-column: span 6;
   }

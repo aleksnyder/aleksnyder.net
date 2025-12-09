@@ -33,14 +33,11 @@
   .footer__social {
     margin: 1em 0 0;
     padding: 0;
-    -ms-grid-column-span: 12;
     grid-column: span 12;
     display: flex;
     justify-content: center;
     @include bp(desktop) {
       margin: 0;
-      -ms-grid-column-span: 6;
-      -ms-grid-column: 7;
       grid-column: span 6;
       justify-content: flex-end;
     }
@@ -64,11 +61,9 @@
     margin: 0 0 1.5em;
     letter-spacing: .04em;
     font-size: 1em;
-    -ms-grid-column-span: 12;
     grid-column: span 12;
     text-align: center;
     @include bp(desktop) {
-      -ms-grid-column-span: 6;
       grid-column: span 6;
       text-align: left;
     }

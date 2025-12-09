@@ -181,11 +181,8 @@ $breakpoints: (
 }
 
 @mixin grid {
-  -ms-grid-column-span: 12;
   grid-column: span 12;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
 }

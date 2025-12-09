@@ -14,9 +14,4 @@ body {
     @include bp(tablet) {
         grid-template-rows: 70px 1fr auto;
     }
-    &:focus {
-        @include bp(ie) {
-            outline: none;
-        }
-    }
 }

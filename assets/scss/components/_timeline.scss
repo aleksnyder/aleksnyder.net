@@ -16,10 +16,6 @@
     @include bp(tablet) {
       margin: 4rem 0 2rem;
     }
-    @include bp(ie) {
-      width: 220px;
-      height: auto;
-    }
   }
 
 
@@ -141,9 +137,6 @@
       @include bp(tablet) {
         margin: 0 0 100px;
       }
-    }
-    @include bp(ie) {
-      margin-bottom: 8em;
     }
   }
 
@@ -280,8 +273,4 @@
   .about,
   .resume {
     position: relative;
-    @include bp(ie) {
-      display: flex;
-      flex-flow: column nowrap;
-    }
   }

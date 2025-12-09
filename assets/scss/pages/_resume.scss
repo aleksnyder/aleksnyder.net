@@ -38,9 +38,6 @@
   top: 2rem;
   right: 0;
   margin: 0.5em;
-  @include bp(ie) {
-    top: 70px;
-  }
   a {
     padding: .5em;
     &:first-of-type {
@@ -55,9 +52,5 @@
   a {
     display: block;
     text-align: center;
-  }
-
-  @include bp(ie) {
-    margin-bottom: 2em;
   }
 }

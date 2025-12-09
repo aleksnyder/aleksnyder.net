@@ -8,14 +8,10 @@
 }
 
 .menu {
-    /*display: none;*/
-    -ms-grid-column-span: 12;
     grid-column: span 12;
     background: $accent-color;
     @include bp(large-phone) {
         display: block;
-        -ms-grid-column-span: 10;
-        -ms-grid-column: 3;
         grid-column: span 10;
         background: none;
     }

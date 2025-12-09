@@ -12,8 +12,7 @@
     "postcss-cli": "^7.1.1"
   },
   "browserlists": [
-    "ie 11",
-    "last 3 versions"
+    "baseline widely available"
   ],
   "devDependencies": {
     "playwright": "^1.19.2",
