@@ -218,11 +218,14 @@
         padding-right: 30px;
       }
     }
+    @include bp(tablet) {
+      margin-left: 5%;
+    }
   }
 
   .cc-right {
     @include bp(tablet) {
-      margin-left: 60%;
+      margin-left: 55%;
     }
     .cc-in {
       @include bp(tablet) {
