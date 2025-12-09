@@ -9,7 +9,7 @@
     text-align: center;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       color: $bg-light;
       text-decoration: none;
     }
@@ -30,7 +30,7 @@
     transition: background-color 0.2s;
 
     &:hover,
-    &:focus {
+    &:focus-visible {
       background-color: #D6D6D6;
     }
 

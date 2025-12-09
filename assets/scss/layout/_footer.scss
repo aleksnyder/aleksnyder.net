@@ -51,7 +51,7 @@
       padding: 0 .5em;
       fill: $text-color-light;
       &:hover,
-      &:focus {
+      &:focus-visible {
         fill: $yellow;
       }
     }

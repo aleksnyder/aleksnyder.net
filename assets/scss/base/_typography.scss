@@ -65,7 +65,7 @@ a {
   }
 }
 
-:focus {
+:focus-visible {
   outline: 2px dashed currentColor;
   outline-offset: 3px;
 }

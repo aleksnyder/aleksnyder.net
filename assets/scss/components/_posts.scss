@@ -146,7 +146,7 @@
   }
 
   a:hover,
-  a:focus {
+  a:focus-visible {
     color: $yellow;
   }
   
@@ -177,7 +177,7 @@
     color: #00000c; 
   }
 
-  &:focus,
+  &:focus-visible,
   &:hover {
     background-color: transparent;
     border: 1px solid #ddd;

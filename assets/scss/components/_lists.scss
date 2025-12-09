@@ -12,7 +12,7 @@
     text-decoration: none;
     white-space: nowrap;
     &:hover,
-    &:focus {
+    &:focus-visible {
       background: #cde4ec;
     }
     &:link,

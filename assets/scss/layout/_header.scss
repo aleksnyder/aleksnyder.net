@@ -18,7 +18,7 @@
     letter-spacing: 1px;
     color: $primary-color;
     &:hover,
-    &:focus {
+    &:focus-visible {
       text-decoration: none;
       .logo__initial {
         background: transparent;
@@ -83,7 +83,7 @@
     a {
         position: absolute;
         left: -9999px;
-        &:focus {
+        &:focus-visible {
             display: block;
             position: static;
             left: 0;

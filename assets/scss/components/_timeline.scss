@@ -48,7 +48,7 @@
       color: $primary-color;
       text-decoration: none;
       &:hover,
-      &:focus {
+      &:focus-visible {
         color: $yellow;
         .profile-links__title,
         .porfile-links__subtitle {
