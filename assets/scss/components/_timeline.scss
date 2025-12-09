@@ -8,14 +8,11 @@
 
   .profile-pic {
     grid-column: span 12;
-    display: flex;
-    justify-content: center;
-    margin: 0 0 2rem;
+    float: left;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
     border-radius: 50%;
-    border: 6px solid $yellow;
-    @include bp(tablet) {
-      margin: 4rem 0 2rem;
-    }
+    margin: 0 1rem 0.5rem 0;
   }
 
 
@@ -51,7 +48,7 @@
       &:focus-visible {
         color: $yellow;
         .profile-links__title,
-        .porfile-links__subtitle {
+        .profile-links__subtitle {
           color: $yellow;
         }
       }
@@ -92,7 +89,7 @@
     margin-bottom: 1em;
     &:after {
       @include thick-underline($works-1);
-      margin: 0.5em 0 0 0;
+      margin: 0.5em 0 1rem 0;
     }
   }
 
