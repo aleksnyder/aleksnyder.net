@@ -11,7 +11,7 @@ description: "A web-friendly version of Alek Snyder's resume."
 **Web Technologies**
 * Jekyll, WordPress, Drupal, Hugo, Grav, Contentstack, Sanity
 * Jenkins, Docker, Kubernetes, GitHub Actions, Terraform, AWS, GCP, ELK
-* Node.js (Vite, Gulp, Webpack, Puppeteer, NPM Scripts, Microservices)
+* Node.js (Vite, Gulp, Webpack, Playwright/Puppeteer, NPM Scripts, Microservices)
 
 **Programming Language Experience**
 * CSS (SASS, LESS, PostCSS, Tailwind, Selectors Level 4)
@@ -22,16 +22,16 @@ description: "A web-friendly version of Alek Snyder's resume."
 
 ## Work Experience
 
-**Senior Software Engineer - Elastic** (July 2022 - Present)
+**Senior Software Engineer - Elastic** (July 2022 - December 2025)
 
-Full-stack developer responsible for enhancing and maintaining elastic.co.
+Full-stack engineer responsible for enhancing and maintaining elastic.co.
 
 * Built an ETL tool in Typescript for migrating over 120,000 items into Sanity.
 * Re-engineered the search experience on elastic.co to deliver context-driven results enhanced by machine learning and RAG.
 * Overhauled and standardized the elastic.co website architecture to use Blue/Green deployments in AWS and transitioned supporting architecture to Terraform.
 * Developed a Python script to migrate over 2,000 Jira tickets, all comments in those tickets, and all referenced assets from those tickets into GitHub.
-* Architected and implemented an application framework for introducing potential customers to Elastic pricing structures and the features available in each tier and solution.
-* Refactored the Next.js codebase powering elastic.co to increase back-end performance by over 80%.
+* Improved and maintained over a dozen highly available, Kubernetes-served APIs that receive over 100,000 daily requests.
+* Refactored the React and Next.js codebase powering elastic.co to increase back-end performance by over 80%.
 
 **Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
 
