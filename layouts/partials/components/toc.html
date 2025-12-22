@@ -6,8 +6,8 @@
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
 <aside class="sidebar">
-    <div class="table-of-contents">
-        <h2 class="sr-only">Table of contents</h2>
+    <div class="table-of-contents callout">
+        <h2 class="toc__title">On this page</h2>
         <nav>
             {{- range $headers -}}
                 {{- $header := . -}}
