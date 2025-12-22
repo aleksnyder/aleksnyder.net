@@ -1,44 +1,46 @@
 .about {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1em;
-    margin: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.profile-pic + h1,
+.accolades {
+  grid-column: span 12;
+  margin-top: 0;
+}
+
+.description {
+  grid-column: span 12;
+  @include bp(desktop) {
+    grid-column: span 9;
+  }
+}
+
+.clients,
+.skills {
+  grid-column: span 12;
+  @include bp(desktop) {
+    grid-column: span 6;
   }
 
-  .profile-pic + h1,
-  .accolades {
-    grid-column: span 12;
-    margin-top: 0;
+  h3 {
+    color: $text-color-light;
+    font-size: 1.25em;
   }
+}
 
-  .description {
-    grid-column: span 12;
-    @include bp(desktop) {
-      grid-column: span 9;
-    }
-  }
+.info__title {
+  margin-bottom: 1em;
 
-  .clients,
-  .skills {
-    grid-column: span 12;
-    @include bp(desktop) {
-      grid-column: span 6;
-    }
-    h3 {
-      color: $text-color-light;
-      font-size: 1.25em;
-    }
+  &:after {
+    @include thick-underline($works-1);
+    margin: 0.5em 0 1rem 0;
   }
+}
 
-  .info__title {
-    margin-bottom: 1em;
-    &:after {
-      @include thick-underline($works-1);
-      margin: 0.5em 0 1rem 0;
-    }
-  }
-
-  .about,
-  .resume {
-    position: relative;
-  }
+.about,
+.resume {
+  position: relative;
+}

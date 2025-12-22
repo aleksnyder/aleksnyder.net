@@ -1,18 +1,60 @@
 {{ define "main" }}
 
+<div class="inner padding-bottom-0">
+    <div class="project__intro">
+        <section class="section-intro__content">
+            <h1 class="section-intro__title grid-col-12">{{ .Title }}</h1>
+            {{ with .Params.description }}
+                <p>{{ . }}</p>
+            {{ end }}
+            {{ with .Params.projectUrl }}
+                <a class="project__link" href="{{ . }}" rel="noopener noreferrer">Visit site &rarr;</a>
+            {{ end }}
+        </section>
+        <div class="intro__screenshot">
+            <picture>
+                <source type="image/webp" srcset="{{ .Params.images.webp }}">
+                <source type="image/jpeg" srcset="{{ .Params.images.jpg }}">
+                <img src="{{ .Params.images.jpg }}" alt="Preview Image for {{ .Title }}">
+            </picture>
+        </div>
+    </div>
+</div>
+<div class="callout">
+    <div class="inner">
+        <div class="project-details">
+            <section class="project-role">
+                <h3><span class="info__title">Project brief</span></h3>
+                <p>{{ .Params.projectBrief }}</p>
+            </section>
+            <section class="project-summary">
+                <h3><span class="info__title">My Role</span></h3>
+                {{ .Params.contribution | safeHTML }}
+            </section>
+            <section class="project-tools">
+                <h3><span class="info__title">Tools used</span></h3>
+                <ul class="dotless">
+                    {{ range .Params.techs }}
+                        <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+
+{{ if .RenderString .Content }}
 <div class="wrapper-sm">
     <article class="section markdown">
-        <h1 class="page-title">{{ .Title }}</h1>
+        <h2>Project Highlights</h2>
         {{ .Content }}
-    
-        {{ with .Params.projectUrl }}
-            <div class="work-cta">
-                <a class="link--visit" href="{{ . }}">Visit site</a>
-                <a class="link--back" href="/works">View more projects</a>
-            </div>
-        {{ end }}
+
+        <div class="work-cta">
+            <a class="link--back" href="/works">View all projects</a>
+        </div>
     </article>
 </div>
+{{ end }}
 
 {{ $prismjs := resources.Get "js/prism.js" }}
 {{ $prism := slice $prismjs | resources.Concat "js/prism.min.js" | minify | fingerprint }}

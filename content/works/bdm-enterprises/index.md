@@ -1,6 +1,8 @@
 ---
 title: BDM Enterprises
 description: Project page for BDM Enterprises. A static site built with plain ol' HTML, CSS, and a dash of JavaScript.
+contribution: "<p>I designed and built the BDM Enterprises site from scratch using plain ol' HTML,CSS, and JavaScript.</p>"
+projectBrief: Early in 2015, I was approached by BDM Enterprises LLC. to build a website for them. Their goal was to attract new customers in Central Maryland. I was tasked by BDM to build a website which was simple, responsive, and easy to use.
 date: "2019-05-02T19:47:09+02:00"
 jobDate: 2019
 techs: [HTML, CSS]
@@ -10,14 +12,6 @@ thumbnail:
   webp: /img/bdm-enterprises.webp
 projectUrl: http://www.bdmenterprisesllc.net/
 images:
-  jpg: /img/jekyll-cv.jpg
-  webp: /img/jekyll-cv.webp
+  jpg: /works/bdm-enterprises/bdm-redux.jpg
+  webp: /works/bdm-enterprises/bdm-redux.webp
 ---
-
-## Project Overview
-Early in 2015, I was approached by BDM Enterprises LLC. to build a website for them. Their goal was to attract new customers in Central Maryland. I was tasked by BDM to build a website which was simple, responsive, and easy to use.
-
-{{< screenshot src="bdm-redux.jpg" alt="BDM Enterprises website in a browser" >}}
-
-## Responsibilities
-I designed and built the BDM Enterprises site from scratch using plain ol' HTML,CSS, and JavaScript.
