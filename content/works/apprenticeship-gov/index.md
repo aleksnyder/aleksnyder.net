@@ -14,8 +14,8 @@ thumbnail:
   webp: /img/projects/apprenticeship.webp
 projectUrl: https://www.apprenticeship.gov
 images:
-  jpg: /works/apprenticeship-gov/apprenticeship-gov.jpg
-  webp: /works/apprenticeship-gov/apprenticeship-gov.webp
+  jpg: /img/projects/apprenticeship.jpg
+  webp: /img/projects/apprenticeship.webp
 ---
 
 {{< sidebyside left="app_gov_resource_hub.jpg" right="app_gov_resources.jpg" alt="List of Apprenticeship.gov resources" >}}
