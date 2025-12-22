@@ -14,6 +14,12 @@
 }
 
 .toc {
+  &__title {
+    margin: 0 0 2rem;
+    font-size: var(--size-500);
+    font-weight: 500;
+  }
+
   &__link,
   &__link:visited,
   &__link:link {
