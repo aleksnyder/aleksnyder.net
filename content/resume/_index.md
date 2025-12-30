@@ -26,12 +26,12 @@ description: "A web-friendly version of Alek Snyder's resume."
 
 Full-stack engineer responsible for enhancing and maintaining elastic.co.
 
-* Built an ETL tool in Typescript for migrating over 120,000 items into Sanity.
+* Developed a Typescript-based ETL tool to migrate large-scale data into Sanity.
 * Re-engineered the search experience on elastic.co to deliver context-driven results enhanced by machine learning and RAG.
-* Overhauled and standardized the elastic.co website architecture to use Blue/Green deployments in AWS and transitioned supporting architecture to Terraform.
-* Developed a Python script to migrate over 2,000 Jira tickets, all comments in those tickets, and all referenced assets from those tickets into GitHub.
-* Improved and maintained over a dozen highly available, Kubernetes-served APIs that receive over 100,000 daily requests.
-* Refactored the React and Next.js codebase powering elastic.co to increase back-end performance by over 80%.
+* Implemented Blue/Green deployments in AWS for zero-downtime updates and migrated infrastructure to Terraform for better manageability.
+* Automated the migration of Jira tickets to GitHub using Python, including comments and assets.
+* Improved, built, and maintained over a dozen highly available, Kubernetes-served APIs, webhooks, and services which receive over 1 million daily requests.
+* Refactored the React and Next.js codebase powering elastic.co to increase back-end performance by over 80% leading to faster build times and page performance.
 
 **Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
 
