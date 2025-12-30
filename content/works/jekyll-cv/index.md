@@ -8,8 +8,8 @@ jobDate: 2019
 techs: [Jekyll, Ruby, YAML, SCSS]
 roles: [UX Designer, Developer]
 thumbnail:
-  jpg: /img/jekyll-cv.jpg
-  webp: /img/jekyll-cv.webp
+  jpg: /works/jekyll-cv/jekyll-cv.jpg
+  webp: /works/jekyll-cv/jekyll-cv.webp
 projectUrl: https://github.com/aleksnyder/jekyll-cv
 images:
   jpg: /works/jekyll-cv/jekyll-cv-desktop.jpg

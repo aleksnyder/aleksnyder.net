@@ -10,8 +10,8 @@ thumbnail:
   webp: /img/aaos.webp
 projectUrl: https://web.archive.org/web/20141223183508/http://www.aaos.net/content/
 images:
-  jpg: /img/jekyll-cv.jpg
-  webp: /img/jekyll-cv.webp
+  jpg: /works/jekyll-cv/jekyll-cv.jpg
+  webp: /works/jekyll-cv/jekyll-cv.webp
 draft: true
 ---
 

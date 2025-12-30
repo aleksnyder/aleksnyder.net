@@ -96,7 +96,7 @@ Redesigning a site is a good time to look at what tedious or repetitive tasks ca
 ### Generate Open Graph Images
 Recently sites [like Github](https://github.blog/2021-06-22-framework-building-open-graph-images/) have been adding a title onto an image template for the images shared on social media.  In case people reading my posts wanting to share, I created my own share image template. 
 
-{{< image src="img/keep-a-bragdoc.png" alt="Social share image example" caption="Social Share Image generated for the 'Keep a Bragdoc' blog post.">}}
+{{< image src="img/notes/keep-a-bragdoc.png" alt="Social share image example" caption="Social Share Image generated for the 'Keep a Bragdoc' blog post.">}}
 
 A Playwright script looks at the blog post, pulls the title, places the new title on a svg template, and then saves the social share image as a PNG file.
 
