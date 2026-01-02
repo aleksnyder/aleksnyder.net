@@ -1,27 +1,29 @@
 {{ define "main" }}
-<div class="inner">
-    <div class="intro">
-        <section class="intro__content">
-            <h1 class="intro__title grid-col-12">About me</h1>
-            <h2 class="section-subtitle">On this page you will read not only about this site but also my journey.</h2>
-            <p>{{ .Content }}</p>
-        </section>
-        <aside class="intro__sidebar">
-            <div class="callout">
-                <h2 class="callout__title">Elsewhere</h2>
-                <p>For even more recent work, you can find me coding on <a href="https://github.com/aleksnyder" rel="noopener noreferrer">GitHub</a> or read about my <a href="/resume">professional experience</a> on my resume.</p>
-            </div>
-        </aside>
+<section class="section wrapper padding-bottom-0">
+    <div class="inner">
+        <div class="intro">
+            <section class="intro__content">
+                <h1 class="intro__title grid-col-12">About me</h1>
+                <h2 class="section-subtitle">On this page you will read not only about this site but also my journey.</h2>
+                <p>{{ .Content }}</p>
+            </section>
+            <aside class="intro__sidebar">
+                <div class="callout">
+                    <h2 class="callout__title">Elsewhere</h2>
+                    <p>For even more recent work, you can find me coding on <a href="https://github.com/aleksnyder" rel="noopener noreferrer">GitHub</a> or read about my <a href="/resume">professional experience</a> on my resume.</p>
+                </div>
+            </aside>
+        </div>
+        <div class="about">
+            <section class="clients">
+                <h3><span class="info__title">Clients I've Worked With</span></h3>
+                <p>Georgetown University Alumni Association, USAID, PCI Communications, FDIC, USCG Boating Safety, FDA, Be Tobacco Free, Department of Health and Human Services, Department of Labor, Office of Apprenticeship, BDM Enterprises</p>
+            </section>
+            <section class="skills">
+                <h3><span class="info__title">Skills</span></h3>
+                <p>UI/UX, HTML/CSS, SASS/SCSS, JavaScript, Typescript, PHP, Python, Go, MySQL, PostgreSQL, MariaDB, Elasticsearch, CosmosDB, Drupal, WordPress, Node.js, React, Angular, Vue.js, Jenkins, Docker, Kubernetes, AWS, GCP</p>
+            </section>
+        </div>
     </div>
-    <div class="about">
-        <section class="clients">
-            <h3><span class="info__title">Clients I've Worked With</span></h3>
-            <p>Georgetown University Alumni Association, USAID, PCI Communications, FDIC, USCG Boating Safety, FDA, Be Tobacco Free, Department of Health and Human Services, Department of Labor, Office of Apprenticeship, BDM Enterprises</p>
-        </section>
-        <section class="skills">
-            <h3><span class="info__title">Skills</span></h3>
-            <p>UI/UX, HTML/CSS, SASS/SCSS, JavaScript, Typescript, PHP, Python, Go, MySQL, PostgreSQL, MariaDB, Elasticsearch, CosmosDB, Drupal, WordPress, Node.js, React, Angular, Vue.js, Jenkins, Docker, Kubernetes, AWS, GCP</p>
-        </section>
-    </div>
-</div>
+</section>
 {{ end }}
