@@ -147,21 +147,16 @@
         }
         .line {
             &.line-top {
-                -webkit-transform: translateY(3px) rotate(225deg);
                 transform: translateY(3px) rotate(225deg);
-                -webkit-transform-origin: center;
                 transform-origin: center;
             }
             &.line-bottom {
-                -webkit-transform: translateY(-3px) rotate(-225deg);
                 transform: translateY(-3px) rotate(-225deg);
-                -webkit-transform-origin: center;
                 transform-origin: center;
             }
         }
         ul {
             visibility: visible;
-            -webkit-transform: translateY(0);
             transform: translateY(0);
         }
     }
@@ -175,14 +170,12 @@
     width: 20px;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .circle {
     display: block;
     background-color: #454545;
     border-radius: 50%;
-    -khtml-border-radius: 50%;
     z-index: 99;
     height: 50px;
     width: 50px;
