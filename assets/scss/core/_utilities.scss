@@ -1,13 +1,15 @@
-// Screen reader only helper
-@mixin sr-only() {
-    position: absolute;
-    left: -999em;
-  }
-
 .sr-only {
     @include sr-only();
 }
 
 .text-align--center {
   text-align: center;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
 }

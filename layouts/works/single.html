@@ -1,9 +1,9 @@
 {{ define "main" }}
 
 <div class="inner padding-bottom-0">
-    <div class="project__intro">
-        <section class="section-intro__content">
-            <h1 class="section-intro__title grid-col-12">{{ .Title }}</h1>
+    <div class="project-intro">
+        <section class="intro__content">
+            <h1 class="intro__title grid-col-12">{{ .Title }}</h1>
             {{ with .Params.description }}
                 <p>{{ . }}</p>
             {{ end }}
@@ -11,7 +11,7 @@
                 <a class="project__link" href="{{ . }}" rel="noopener noreferrer">Visit site &rarr;</a>
             {{ end }}
         </section>
-        <div class="intro__screenshot">
+        <div class="project-intro__screenshot">
             <picture>
                 <source type="image/webp" srcset="{{ .Params.images.webp }}">
                 <source type="image/jpeg" srcset="{{ .Params.images.jpg }}">
@@ -63,13 +63,13 @@
 {{ end }}
 
 {{ define "below_content" }}
-<div class="post__nav grid-col-12">
-    <div class="post__prev">
+<div class="pagination grid-col-12">
+    <div class="previous">
         {{ if .NextInSection }}
             <a href="{{.NextInSection.Permalink}}">&laquo; {{.NextInSection.Title}}</a>
         {{ end }}
     </div>
-    <div class="post__next">
+    <div class="next">
         {{ if .PrevInSection }}
             <a href="{{.PrevInSection.Permalink}}">{{.PrevInSection.Title}} &raquo;</a>
         {{ end }}

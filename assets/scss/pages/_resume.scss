@@ -3,7 +3,7 @@
     text-align: center;
     margin: 4rem 0 2rem;
     &:after {
-      margin: 1rem auto;
+      margin: var(--spacing-md) auto;
     }
   }
   h2 {

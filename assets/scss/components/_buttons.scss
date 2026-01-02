@@ -3,7 +3,7 @@
   background-color: #ddd;
   color: #00000c;
   border-radius: 3px;
-  padding: 0.5rem 0.75rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
   text-decoration: none;
   border: 1px solid transparent;
   transition: all 0.25s ease-in-out;

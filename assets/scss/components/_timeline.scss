@@ -26,7 +26,7 @@
   }
 
   h3 {
-    color: $text-color-light;
+    color: var(--color-text-primary);
     font-size: 1.25em;
   }
 }
@@ -35,8 +35,8 @@
   margin-bottom: 1em;
 
   &:after {
-    @include thick-underline($works-1);
-    margin: 0.5em 0 1rem 0;
+    @include thick-underline($color-border-primary);
+    margin: 0.5em 0 var(--spacing-md) 0;
   }
 }
 

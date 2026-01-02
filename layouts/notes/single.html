@@ -23,7 +23,7 @@
             {{ .Content }}
 
             <div class="discuss">
-                <a class="back-to-notes" href="/notes" rel="nofollow noopener">Back to notes</a>
+                <a class="btn" href="/notes" rel="nofollow noopener">Back to notes</a>
             </div>
         </article>
         {{ if .Params.toc }}
@@ -39,13 +39,13 @@
 {{ end }}
 
 {{ define "below_content" }}
-<div class="post__nav grid-col-12">
-    <div class="post__prev">
+<div class="pagination grid-col-12">
+    <div class="previous">
         {{ if .NextInSection }}
             <a href="{{.NextInSection.Permalink}}">&laquo; {{.NextInSection.Title}}</a>
         {{ end }}
     </div>
-    <div class="post__next">
+    <div class="next">
         {{ if .PrevInSection }}
             <a href="{{.PrevInSection.Permalink}}">{{.PrevInSection.Title}} &raquo;</a>
         {{ end }}

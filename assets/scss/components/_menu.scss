@@ -9,7 +9,7 @@
 
 .menu {
     grid-column: span 12;
-    background: $accent-color;
+    background: var(--color-secondary);
     @include bp(large-phone) {
         display: block;
         grid-column: span 10;
@@ -43,7 +43,7 @@
     }
     a {
         display: block;
-        color: $yellow;
+        color: var(--color-links);
         font-weight: bold;
         transition: color 0.5s ease-in-out;
         @include bp(tablet) {
@@ -51,15 +51,15 @@
         }
         &:hover,
         &:focus-visible {
-            color: $yellow;
+            color: var(--color-links);
         }
     }
 }
 
 .menu-item--active {
-    border-bottom: 2px solid $yellow;
+    border-bottom: 2px solid var(--color-links);
     a {
-        color: $yellow;
+        color: var(--color-links);
     }
 }
 
@@ -88,11 +88,11 @@
     bottom: 1em;
     right: 1em;
     border-radius: 50%;
-    background: $accent-color;
+    background: var(--color-secondary);
     z-index: 99;
     padding-right: 0;
     svg {
-        fill: $yellow;
+        fill: var(--color-links);
     }
 }
 
@@ -125,7 +125,7 @@
 
         &:focus-visible {
             @include bp(below-tablet) {
-                outline: 2px dashed $yellow;
+                outline: 2px dashed var(--color-links);
             }
         }
     }

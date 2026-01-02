@@ -1,71 +1,69 @@
-.site-footer {
-    background: $bg-color-dark-accent;
-    border-top: 5px solid $primary-color;
-    z-index: 1;
-    width: 100%;
-    color: $text-color-light;
-    font-weight: 500;
+.footer {
+  background: var(--color-background-secondary);
+  border-top: 5px solid var(--color-primary);
+  z-index: 1;
+  width: 100%;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  @include grid;
+  padding: 1.5em 0;
+  /* autoprefixer: ignore next */
+  align-items: end;
+  box-sizing: border-box;
+
+  .inner {
     @include grid;
-    padding: 1.5em 0;
-    /* autoprefixer: ignore next */
-    align-items: end;
-    box-sizing: border-box;
-    .inner {
-      @include grid;
-      padding-bottom: 0;
-    }
-    @include bp(desktop) {
-      padding: 1.5rem 0;
-    }
-    p {
-      margin: 0;
-      font-weight: 600;
-    }
+    padding-bottom: 0;
   }
 
-  @-moz-document url-prefix() {
-    .footer {
-      position: relative;
-      height: auto;
-    }
+  p {
+    margin: 0;
+    font-weight: 600;
   }
 
-  .footer__social {
-    margin: 1em 0 0;
-    padding: 0;
-    grid-column: span 12;
-    display: flex;
-    justify-content: center;
-    @include bp(desktop) {
-      margin: 0;
-      grid-column: span 6;
-      justify-content: flex-end;
-    }
-    li {
-      list-style: none;
-      display: inline-block;
-    }
-    a {
-      -webkit-transition: fill .3s cubic-bezier(.455,.03,.515,.955);
-      transition: fill .3s cubic-bezier(.455,.03,.515,.955);
-      padding: 0 .5em;
-      fill: $text-color-light;
-      &:hover,
-      &:focus-visible {
-        fill: $yellow;
-      }
-    }
+  @include bp(desktop) {
+    padding: var(--spacing-lg) 0;
+  }
+}
+
+.footer__social {
+  margin: 1em 0 0;
+  padding: 0;
+  grid-column: span 12;
+  display: flex;
+  justify-content: center;
+  @include bp(desktop) {
+    margin: 0;
+    grid-column: span 6;
+    justify-content: flex-end;
   }
 
-  .footer__info {
-    margin: 0 0 1.5em;
-    letter-spacing: .04em;
-    font-size: 1em;
-    grid-column: span 12;
-    text-align: center;
-    color: $text-color-light;
-    @include bp(desktop) {
-      grid-column: span 6;
-      text-align: left;
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  a {
+    transition: fill .3s cubic-bezier(.455, .03, .515, .955);
+    padding: 0 .5em;
+    fill: var(--color-text-primary);
+
+    &:hover,
+    &:focus-visible {
+      fill: var(--color-links);
     }
   }
+}
+
+.footer__info {
+  margin: 0 0 1.5em;
+  letter-spacing: .04em;
+  font-size: 1em;
+  grid-column: span 12;
+  text-align: center;
+  color: var(--color-text-primary);
+  @include bp(desktop) {
+    grid-column: span 6;
+    text-align: left;
+  }
+}

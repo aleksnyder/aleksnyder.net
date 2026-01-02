@@ -1,3 +1,5 @@
+@use '../core/variables' as *;
+
 /* CSS Variables */
 :root {
   --size-300: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
@@ -9,6 +11,23 @@
   --size-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
   --size-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
   --size-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
+  --color-primary: #19a69a;
+  --color-secondary: #242A32;
+  --color-background-primary: #141414;
+  --color-background-secondary: #101010;
+  --color-background-tertiary: #EAEAEA;
+  --color-border-primary: #02B9B5;
+  --color-text-primary: #f4f4f4;
+  --color-text-secondary: #A1A1AA;
+  --color-links: #f7b733;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 6rem;
 };
 
 /* Box sizing rules */
@@ -19,7 +38,7 @@
 }
 
 ol {
-  padding-left: 1rem;
+  padding-left: var(--spacing-md);
 }
 
 /* Remove default padding */

@@ -7,10 +7,10 @@ body {
     min-height: 100%;
     display: grid;
     grid-template-rows: auto;
-    background: $bg-color-dark;
+    background: var(--color-background-primary);
     margin: 0;
     font-family: $base-font-family;
-    color: $text-color-light;
+    color: var(--color-text-primary);
     @include bp(tablet) {
         grid-template-rows: 70px 1fr auto;
     }

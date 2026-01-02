@@ -120,7 +120,7 @@
     background-color: color-mix(in srgb, #1a1a1a 90%, #fff 10%);
     font-size: 1rem;
     color: #f4f4f4;
-    padding: 0.01rem 0.25rem;
+    padding: 0.0var(--spacing-md) 0.25rem;
     border-radius: 3px;
     word-break: break-all;
   }
@@ -196,6 +196,6 @@ code {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem var(--spacing-xs);
     z-index: 2;
 }

@@ -1,0 +1,54 @@
+.project-intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 4rem;
+  margin: 0 0 var(--spacing-xl);
+
+  @include bp(tablet) {
+    flex-flow: row nowrap;
+    margin: var(--spacing-xxl) 0 -3rem;
+  }
+}
+
+.project-intro__screenshot {
+  box-shadow: 0 .6rem 2.8rem .4rem rgba(47,53,66,.07),0 0 1.6rem .25rem rgba(47,53,66,.05);
+  border-radius: 0.5rem;
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+  margin: 2em 0;
+
+  h3 {
+    color: var(--color-text-primary);
+    font-size: 1.25em;
+  }
+}
+
+.project-role,
+.project-summary {
+  grid-column: span 5;
+  @include bp(desktop) {
+    grid-column: span 2;
+  }
+}
+
+.project-screenshot {
+  padding: 5rem 0;
+  margin: 0 auto;
+  max-width: 96rem;
+}
+
+.project-tools {
+  grid-column: span 5;
+  @include bp(desktop) {
+    grid-column: span 1;
+  }
+
+  li {
+    color: var(--color-text-secondary);
+  }
+}

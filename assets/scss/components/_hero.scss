@@ -3,7 +3,7 @@
     max-width: 46rem;
 
     p {
-      color: $text-color-light;
+      color: var(--color-text-primary);;
       font-size: var(--size-700);
     }
   }
@@ -16,8 +16,8 @@
       display: block;
       height: .5rem;
       width: 6.25rem;
-      margin: 3rem 0;
-      background-color: $primary-color;
+      margin: var(--spacing-xl) 0;
+      background-color: var(--color-primary);
     }
   }
 }

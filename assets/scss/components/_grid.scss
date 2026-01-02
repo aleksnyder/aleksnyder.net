@@ -39,14 +39,14 @@
     [full-start] minmax(1em, 1fr)
     [main-start] minmax(0, 46em) [main-end]
     minmax(1em, 1fr) [full-end];
-  margin: 6rem 0 0;
+  margin: var(--spacing-xxl) 0 0;
   @include mq(tablet-lg) {
     grid-template-columns:
       [main-start] minmax(0, 46em) [main-end sidebar-start] 1fr [sidebar-end];
   }
 
   .section-title {
-    margin: 0 0 3rem;
+    margin: 0 0 var(--spacing-xl);
   }
 }
 
@@ -66,7 +66,7 @@
 .cell {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: var(--spacing-xs) 0;
 
   h3 {
     @include bp(desktop) {

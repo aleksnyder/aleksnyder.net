@@ -1,23 +1,25 @@
 .tags {
-    display: inline-flex;
-    flex-flow: row wrap;
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+
+.tag {
+  background: #f2f8fa;
+  font-weight: 500;
+  color: var(--color-background-primary);
+  border-radius: 3px;
+  margin: 0 0.5em 0.5em 0;
+  padding: 2px 8px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus-visible {
+    background: #cde4ec;
   }
 
-  .tag {
-    background: #f2f8fa;
-    font-weight: 500;
-    color: $bg-color-dark;
-    border-radius: 3px;
-    margin: 0 0.5em 0.5em 0;
-    padding: 2px 8px;
-    text-decoration: none;
-    white-space: nowrap;
-    &:hover,
-    &:focus-visible {
-      background: #cde4ec;
-    }
-    &:link,
-    &:visited {
-      color: $bg-color-dark;
-    }
+  &:link,
+  &:visited {
+    color: var(--color-background-primary);
   }
+}

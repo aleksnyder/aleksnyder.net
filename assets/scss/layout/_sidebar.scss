@@ -1,7 +1,7 @@
 .sidebar {
   display: none;
   grid-column: sidebar;
-  padding: 3rem 0;
+  padding: var(--spacing-xl) 0;
 
   @include mq(tablet-lg) {
     display: block;
@@ -14,6 +14,19 @@
 }
 
 .toc {
+  li {
+    font-size: var(--size-400);
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: var(--color-links);
+  }
+
+  > .toc {
+    padding-left: var(--spacing-md);
+  }
+
   &__title {
     margin: 0 0 2rem;
     font-size: var(--size-500);
@@ -23,7 +36,7 @@
   &__link,
   &__link:visited,
   &__link:link {
-    color: $primary-color;
+    color: var(--color-primary);
     text-decoration: none;
   }
 
@@ -33,14 +46,14 @@
     &--active,
     &--active:visited,
     &--active:link {
-      color: $yellow;
+      color: var(--color-links);
       text-decoration: underline;
 
       &::before {
         content: ' ';
         width: 2px;
         height: 100%;
-        background-color: $primary-color;
+        background-color: var(--color-primary);
       }
     }
   }
