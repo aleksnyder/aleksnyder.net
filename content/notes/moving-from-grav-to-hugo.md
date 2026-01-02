@@ -7,7 +7,7 @@ tags:
   - Go
   - Hugo
 socialShareImage: https://www.aleksnyder.net/img/social-images/moving-from-grav-to-hugo.png
-date: 2022-07-17
+date: 2026-01-02
 publishdate: 2022-07-17
 ---
 

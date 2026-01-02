@@ -1,8 +1,8 @@
 ---
-date: "2016-11-05T21:05:33+05:30"
+date: "2026-01-02T21:05:33+05:30"
 title: "About"
 menu: "main"
-description: "Hi, I'm Alek.  I have been building interactive experiences, creating brands and developing websites since 2012."
+description: "Hi! I’m Alek. I’m a Software Developer living in the little-known town of Gambrills in Maryland.  I have been building interactive experiences, creating brands and developing websites since 2012."
 ---
 
 Hi! I’m Alek. I’m a Software Developer living in the little-known town of Gambrills in Maryland. Currently, I'm taking a short break before starting up the job search again. My previous job was at [Elastic](https://www.elastic.co).  Welcome to my little piece of the internet. 🌱

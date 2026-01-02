@@ -1,4 +1,5 @@
 ---
+date: "2026-01-02T21:05:33+05:30"
 title: Resume
 visible: false
 display_title: Alek C. Snyder
