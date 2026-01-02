@@ -91,6 +91,7 @@ The shortcode above outputs the following code:
 {{< /prism >}}
 
 {{< h2 >}}Automating Parts of the Site{{< /h2 >}}
+
 Redesigning a site is a good time to look at what tedious or repetitive tasks can be automated.
 
 ### Generate Open Graph Images
@@ -106,10 +107,11 @@ In the past, my portfolio deployments were a manual process.  I would push code 
 In order to accomplish this process, I configured a pipeline in this site's version control system to check the code for inconsistencies, compile the static site, deploy the code to the server using a shell script and SSH, and then notify me via email the result of the deployment.  Any error thrown during the deployment would stop the deployment and sent me an email with the reason for the failure.
 
 {{< h2 >}}Future Plans{{< /h2 >}}
+
 A lot of work went into this redesign but there's always something new to try.  Here's what I'm looking at next:
 * Generate screenshots from a script
 * ~~Use CSS clamp() for font sizes~~
-* Use CSS variables over SASS variables
-* Write some case studies on previous projects
+* ~~Use CSS variables over SASS variables~~
+* ~~Write some case studies on previous projects~~
 * Add some micro-animations
 * Add share links using the Social Share API
