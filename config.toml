@@ -13,8 +13,9 @@ title = "aleksnyder.net"
 
 [module]
   [[module.mounts]]
+    disableWatch = false
     source = 'works'
-    target = 'works'
-  [[module.mounts]]
-    source = 'assets'
     target = 'assets'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]

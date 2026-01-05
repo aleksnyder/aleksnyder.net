@@ -5,7 +5,7 @@ contribution: During the development of apprenticeship.gov, I was involved in ma
 projectBrief: The U.S. Office of Apprenticeship, part of the Department of Labor (DOL), was established by the National Apprenticeship Act of 1937.  
   The Department of Labor wanted a modernized website with a greater focus on apprenticeships.  Enter Apprenticeship.gov.  Apprenticeship.gov is the Department
   of Labor's one-stop place for all things apprenticeship.
-date: "2026-01-05T19:47:09+02:00"
+date: "2026-01-04T19:47:09+02:00"
 jobDate: 2022
 techs: [Drupal, React, Node.js, Azure]
 roles: [UX Designer, Developer, Architect]
