@@ -24,12 +24,12 @@
     <div class="inner">
         <div class="project-details">
             <section class="project-role">
-                <h3><span class="info__title">Project brief</span></h3>
+                <h3><span class="info__title">Project summary</span></h3>
                 <p>{{ .Params.projectBrief }}</p>
             </section>
             <section class="project-summary">
                 <h3><span class="info__title">My Role</span></h3>
-                {{ .Params.contribution | safeHTML }}
+                <p>{{ .Params.contribution }}</p>
             </section>
             <section class="project-tools">
                 <h3><span class="info__title">Tools used</span></h3>
@@ -46,7 +46,7 @@
 {{ if .RenderString .Content }}
 <div class="wrapper-sm">
     <article class="section markdown">
-        <h2>Project Highlights</h2>
+        <h2>In more detail</h2>
         {{ .Content }}
 
         <div class="work-cta">
