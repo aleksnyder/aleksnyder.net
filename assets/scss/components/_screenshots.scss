@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: repeat(4, minmax(0, 1fr));
   grid-template-columns: repeat(21,minmax(0,1fr));
-  margin: var(--spacing-xxl) 0 2rem;
+  margin: var(--spacing-xl) 0 2rem;
 
   & + h3,
   & + h2 {
