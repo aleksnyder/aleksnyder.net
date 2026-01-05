@@ -10,3 +10,11 @@ title = "aleksnyder.net"
     endLevel = 3
     ordered = false
     startLevel = 2
+
+[module]
+  [[module.mounts]]
+    source = 'works'
+    target = 'works'
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
