@@ -10,12 +10,12 @@ jobDate: 2022
 techs: [Drupal, React, Node.js, Azure]
 roles: [UX Designer, Developer, Architect]
 thumbnail:
-  jpg: /img/projects/apprenticeship.jpg
-  webp: /img/projects/apprenticeship.webp
+  jpg: /works/apprenticeship-gov/apprenticeship.jpg
+  webp: /works/apprenticeship-gov/apprenticeship.webp
 projectUrl: https://www.apprenticeship.gov
 images:
-  jpg: /img/projects/apprenticeship.jpg
-  webp: /img/projects/apprenticeship.webp
+  jpg: /works/apprenticeship-gov/apprenticeship.jpg
+  webp: /works/apprenticeship-gov/apprenticeship.webp
 ---
 
 Apprenticeship.gov is an incredibly complex application pulling in data from nearly every state's apprenticeship agency plus
