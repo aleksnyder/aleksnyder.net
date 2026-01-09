@@ -24,6 +24,10 @@
     margin: 0;
   }
 
+  li + li {
+    margin: 0;
+  }
+
   strong {
     font-size: var(--size-500);
   }
