@@ -1,0 +1,35 @@
+{{ $desktop := $.Page.Resources.Get (print (.Get "desktop")) }}
+{{ $mobile := $.Page.Resources.Get (print (.Get "mobile")) }}
+
+<section class="screenshots container-breakout">
+    {{ if $desktop }}
+    <div class="screenshot screenshot--desktop">
+        <img
+            class="screenshot__img"
+            sizes='(min-width: 35em) 1200px, 100vw'
+            srcset='
+                {{ ($desktop.Resize "800x").RelPermalink }} 800w,
+                {{ ($desktop.Resize "1200x").RelPermalink }} 1200w,
+                {{ ($desktop.Resize "1920x").RelPermalink }} 1920w'
+            src='{{ ($desktop.Resize "1200x").RelPermalink }}'
+            loading='lazy'
+            alt='{{ with .Get `alt`}}{{ . }}{{ end }}'
+        />
+    </div>
+    {{ end }}
+    {{ if $mobile }}
+    <div class="screenshot screenshot--mobile">
+        <img
+            class="screenshot__img"
+            sizes='(min-width: 35em) 1200px, 100vw'
+            srcset='
+                {{ ($mobile.Resize "800x").RelPermalink }} 800w,
+                {{ ($mobile.Resize "1200x").RelPermalink }} 1200w,
+                {{ ($mobile.Resize "1920x").RelPermalink }} 1920w'
+            src='{{ ($mobile.Resize "1200x").RelPermalink }}'
+            loading='lazy'
+            alt='{{ with .Get `alt`}}{{ . }}{{ end }}'
+        />
+    </div>
+    {{ end }}
+</section>

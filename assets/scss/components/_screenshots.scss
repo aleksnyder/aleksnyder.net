@@ -25,6 +25,16 @@
 
 .screenshot--last {
   grid-row: 2 / span 3;
-  grid-column: 5/span 17;
+  grid-column: 5 / span 17;
   z-index: 2;
+}
+
+.screenshot--desktop {
+  grid-row: 1 / span 5;
+  grid-column: 2 / span 18;
+}
+
+.screenshot--mobile {
+  grid-row: 2 / span 3;
+  grid-column: 15 / span 6;
 }
