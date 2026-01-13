@@ -25,7 +25,11 @@
   }
 
   li + li {
-    margin: var(--spacing-sm) 0;
+    margin: var(--spacing-xs) 0;
+  }
+
+  p + ul {
+    margin-top: 0;
   }
 }
 
