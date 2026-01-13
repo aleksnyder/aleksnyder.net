@@ -55,6 +55,20 @@
     }
   }
 
+  &__link {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.2rem;
+    transition: gap 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      gap: 0.5rem;
+    }
+  }
+
   &__techs {
     margin: 0 0 var(--spacing-xs);
     color: var(--color-primary);
