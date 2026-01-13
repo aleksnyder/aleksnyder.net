@@ -120,7 +120,7 @@
     background-color: color-mix(in srgb, #1a1a1a 90%, #fff 10%);
     font-size: 1rem;
     color: #f4f4f4;
-    padding: 0.0var(--spacing-md) 0.25rem;
+    padding: 0.1rem 0.4rem;
     border-radius: 3px;
     word-break: break-all;
   }
@@ -131,7 +131,7 @@ pre {
     > code {
         display: block;
         background:#2d313a;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px 0;
         color:#D4D4D4;
         border: 0;
         overflow: auto;
@@ -152,7 +152,7 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px 0;
     padding: 0 3.2rem;
     border-radius: 0.8rem;
     color:#D4D4D4;
@@ -165,6 +165,7 @@ pre[class*="language-"] {
 
 .code-block {
     position: relative;
+    font-size: var(--size-400);
 
     &__header {
         position: absolute;
