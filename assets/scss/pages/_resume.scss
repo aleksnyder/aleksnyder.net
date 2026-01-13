@@ -42,12 +42,20 @@
   top: 2rem;
   right: 0;
   margin: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+
   a {
     padding: .5em;
-    &:first-of-type {
-      margin-right: 1em;
-    }
   }
+}
+
+.resume__data {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .contact-information {
