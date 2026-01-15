@@ -7,36 +7,20 @@ html_class: resume
 description: "A web-friendly version of Alek Snyder's resume."
 ---
 
-## Professional Strengths
-
-**Web Technologies**
-* Jekyll, WordPress, Drupal, Hugo, Grav, Contentstack, Sanity
-* Jenkins, Docker, Kubernetes, GitHub Actions, Terraform, AWS, GCP, ELK
-* Node.js (Vite, Gulp, Webpack, Playwright/Puppeteer, NPM Scripts, Microservices)
-
-**Programming Language Experience**
-* CSS (SASS, LESS, PostCSS, Tailwind, Selectors Level 4)
-* Javascript (Typescript, React, Angular, Vue.js, Next.js, Svelte)
-* MySQL, PostgreSQL, MariaDB, Elasticsearch, CosmosDB
-* Python, Go, BASH
-* PHP (Symfony, Laravel, Composer)
-
 ## Work Experience
 
-**Senior Software Engineer - Elastic** (July 2022 - December 2025)
+**Senior Full-stack Engineer - Elastic** (July 2022 - December 2025)
 
-Full-stack engineer responsible for enhancing and maintaining elastic.co.
-
-* Developed a Typescript-based ETL tool to migrate large-scale data into Sanity.
-* Re-engineered the search experience on elastic.co to deliver context-driven results enhanced by machine learning and RAG.
+* Developed an ETL tool using Typescript to migrate all content into Sanity from Contentstack, reducing the migration time and complexity of each content model.
+* Re-engineered the search experience on elastic.co using machine learning and RAG to deliver context-driven results.
+* Identified challenges, critical issues and mitigated risk by utilizing 5 why root cause analysis.
 * Implemented Blue/Green deployments in AWS for zero-downtime updates and migrated infrastructure to Terraform for better manageability.
-* Automated the migration of Jira tickets to GitHub using Python, including comments and assets.
-* Improved, built, and maintained over a dozen highly available, Kubernetes-served APIs, webhooks, and services which receive over 1 million daily requests.
+* Led migration effort from JIRA to GitHub issues using Python scripts as a part of a consolidation effort to save $250k annually.
+* Managed APIs, webhooks, and services receiving over 1 million daily requests in Node.js, Kubernetes, Fastly, and Google Cloud Platform.
 * Refactored the React and Next.js codebase powering elastic.co to increase back-end performance by over 80% leading to faster build times and page performance.
+* Empowered team by mentoring engineers, writing feature technical design documents, and defining standards for technologies such as React, Typescript, and GitHub.
 
 **Lead Engineer - Booz Allen Hamilton** (March 2015 - June 2022)
-
-Full-stack developer responsible for end-to-end web development and architecting solutions to problems faced by clients.
 
 * Proposed software solutions which lead to a multimillion-dollar contract.
 * Collaborated with multiple teams to implement a widely used development platform.
@@ -44,11 +28,9 @@ Full-stack developer responsible for end-to-end web development and architecting
 * Built programming tools and custom software to reduce development time.
 * Led client efforts to integrate with third-party services such as login.gov.
 * Served as technical lead for a team of developers responsible for creating an application to search over 100,000 programs across the country.
-* Engineered a solution to migrate key information from hundreds of policy documents over the last half century into Drupal.
+* Engineered a solution using Python to migrate key information from hundreds of policy documents over the last half century into Drupal.
 
 **Web Developer - Arbola Inc.** (February 2013 - March 2015)
-
-Member of a team dedicated to building, improving and maintaining USAID’s web presence.
 
 * Designed and developed WordPress themes, Drupal themes, Drupal modules, Google Search
 Appliance Frontends, and static HTML sites for USAID.
@@ -59,8 +41,6 @@ Appliance Frontends, and static HTML sites for USAID.
 
 **Senior Frontend Web Developer - Creative Circle** (February 2013 - November 2013)
 
-Motivated Web Developer tasked with finishing up several projects for PCI communications.
-
 * Provided consultation services for numerous PCI projects.
 * Created websites using Joomla, WordPress, static HTML, and PCI's custom-built CMS.
 * Worked onsite and remotely to ensure PCI met their client's deadlines.
@@ -68,11 +48,16 @@ Motivated Web Developer tasked with finishing up several projects for PCI commun
 
 **Junior Web Developer - BOSS Group** (May 2012 - February 2013)
 
-Company-minded team player…results oriented…efficient, professional, web designer adept at using and implementing many different technologies.
-
 * Designed and developed websites for Georgetown University Alumni Association.
 * Created websites which incorporated responsive design and canvas.
 * Built websites using HTML5, CSS3, jQuery, ASP, and third party APIs.
+
+## Skills
+
+**Languages:** JavaScript, Typescript, Python, PHP, CSS, HTML, SQL, Go
+
+**Technologies:** Kubernetes, Docker, React, Drupal, AWS, GCP, Azure, Elasticsearch, Kibana,
+PostgreSQL, Wordpress, Jenkins, Terraform, BASH, Ansible
 
 ## Education
 **Anne Arundel Community College**, Arnold, MD
@@ -82,6 +67,3 @@ Company-minded team player…results oriented…efficient, professional, web des
 * Web Design Certificate
 
 **Comptia Security+ Certificate**
-
-## References
-References available upon request
