@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if TITLE is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 \"Your Title Here\""
+  exit 1
+fi
+
+TITLE="$1"
+
+# URLize the title (convert to lowercase, replace spaces with hyphens)
+URLIZED_TITLE=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[()]//g' | sed 's/[^a-zA-Z0-9-]/-/g' | sed 's/-*$//')
+
+# This is the basic command we are wrapping: creates a blog post scaffold
+hugo new "notes/$URLIZED_TITLE/index.md"
+
+node ./assets/js/generate-social-image.js $TITLE
