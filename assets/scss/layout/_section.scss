@@ -59,6 +59,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    gap: var(--spacing-md);
     margin: 0 0 var(--spacing-xl);
     @include bp(tablet) {
         flex-flow: row nowrap;
@@ -76,15 +77,12 @@
 
     &__content {
         flex: 2;
-        margin-right: var(--spacing-md);
     }
 
     &__sidebar {
         flex: 1;
     }
 }
-
-
 
 .callout {
     padding: 2rem var(--spacing-lg);
